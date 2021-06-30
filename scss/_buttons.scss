@@ -1,0 +1,172 @@
+%btn {
+  display: inline-block;
+  padding: 8px 20px;
+  margin: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn-type1 {
+  @extend %btn;
+  color: $light-color;
+  position: relative;
+  transition: all 0.3s;
+  letter-spacing: 1px;
+  z-index: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-top: 2px solid $primary-color;
+    border-bottom: 2px solid $primary-color;
+    transform: scale(0.1, 1);
+    transition: all 0.3s;
+  }
+  &:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  & span {
+    transition: all 0.3s;
+  }
+  &:hover span {
+    letter-spacing: 5px;
+    // color: $primary-color;
+  }
+  &::after {
+    content: "";
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.3s;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-color: $primary-color;
+    border: 2px solid rgb(192, 10, 47);
+    box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.55),
+      0.125em 0.125em 0.25em rgba(0, 0, 0, 0.25);
+  }
+  &:hover::after {
+    opacity: 0;
+    transform: scale(0.1, 1);
+  }
+}
+
+.btn-secondary {
+  @extend %btn;
+  background: $secondary-color;
+}
+
+$ease_out: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+@mixin transition() {
+  transition: 0.9s $ease_out;
+
+  &:hover {
+    transition: 0.9s $ease_out;
+  }
+}
+
+.gradient-btn {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 0;
+  color: $light-color;
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.55),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.25);
+  background: linear-gradient(
+    to right,
+    rgba($primary-color, 0) 25%,
+    rgba($primary-color, 0.8) 75%
+  );
+  background-position: 1% 50%;
+  background-size: 400% 300%;
+  border: 1px solid $light-color;
+  @include transition;
+
+  &:hover {
+    border: 1px solid $primary-color;
+    color: white;
+    color: #fff;
+    background-position: 99% 50%;
+  }
+}
+
+.btn-type2 {
+  @extend %btn;
+  color: #fff;
+  transition: all 0.5s;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.55),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.25);
+  &:hover {
+    letter-spacing: 4px;
+    box-shadow: none;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 5px;
+    transition: all 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(220, 20, 60, 0.9);
+    background-color: rgba(220, 20, 60, 0.6);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 5px;
+    transition: all 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(220, 20, 60, 0.9);
+    background-color: rgba(220, 20, 60, 0.6);
+  }
+  &:hover::before {
+    transform: rotate(-45deg);
+    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(220, 20, 60, 0.2);
+  }
+  &:hover::after {
+    transform: rotate(45deg);
+    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(220, 20, 60, 0.2);
+  }
+}
+
+@keyframes icon-nudge {
+  0% {
+    transform: rotate(3deg);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: rotate(-3deg);
+    animation-timing-function: ease-out;
+  }
+}

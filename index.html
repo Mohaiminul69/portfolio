@@ -2,100 +2,98 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Portfolio Website</title>
+    <link rel="shortcut icon" href="img/man-of-steal.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Portfolio</title>
   </head>
   <body>
-    <!-- Header -->
-    <section id="header">
-      <div class="header container">
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <nav id="main-nav">
+      <div class="container">
         <div class="nav-bar">
           <div class="brand">
-            <a href="#hero"
-              ><h1>
-                <span>M</span>ohaiminul <span>I</span>slam <span>S</span>hishir
-              </h1></a
-            >
+            <a href="#hero">mohaiminul islam <span>shishir</span></a>
           </div>
           <div class="nav-list">
-            <div class="hamburger"><div class="bar"></div></div>
-            <ul>
-              <li><a href="#hero" data-after="Home">Home</a></li>
-              <li><a href="#services" data-after="Expertise">Expertise</a></li>
-              <li><a href="#projects" data-after="Projects">Projects</a></li>
-              <li><a href="#about" data-after="About">About</a></li>
-              <li><a href="#contact" data-after="Contact">Contact</a></li>
+            <div class="hamburger">
+              <div class="bar"></div>
+            </div>
+            <ul class="menu">
+              <li><a href="#hero" data-after="home">home</a></li>
+              <li><a href="#services" data-after="services">expertise</a></li>
+              <li><a href="#projects" data-after="projects">projects</a></li>
+              <li><a href="#about" data-after="about">about</a></li>
+              <li><a href="#contact" data-after="contact">contact</a></li>
             </ul>
           </div>
         </div>
       </div>
-    </section>
-    <!-- End Header -->
+    </nav>
+    <!-- Navbar End -->
+    <!-- Navbar End -->
+    <!-- Navbar End -->
 
-    <!-- Hero Section  -->
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <!-- Hero Section -->
     <section id="hero">
-      <div class="hero container">
+      <div id="myparticles"></div>
+      <div class="container">
         <div>
-          <h1>Hello, <span></span></h1>
-          <h1>My Name is Shishir<span></span></h1>
-          <h1>I am a Front End Developer<span></span></h1>
-          <a href="#projects" type="button" class="cta">Projects</a>
+          <h1>Hello<span>,</span></h1>
+          <h1>My name is <span>Shishir</span></h1>
+          <h1>I am <span class="typed"></span></h1>
+          <!-- <a class="btn-type2" href="#"><span>portfolio</span></a> -->
+          <a class="btn-type2" href="#projects">portfolio</a>
         </div>
       </div>
     </section>
-    <!-- End Hero Section  -->
+    <!-- Hero Section End -->
+    <!-- Hero Section End -->
+    <!-- Hero Section End -->
 
-    <!-- Service Section -->
+    <!-- Services -->
+    <!-- Services -->
+    <!-- Services -->
     <section id="services">
-      <div class="services container">
-        <div class="service-top">
-          <h1 class="section-title">Expert<span>i</span>se</h1>
-          <!-- <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
-            deleniti maiores pariatur assumenda quas magni et, doloribus quod
-            voluptate quasi molestiae magnam officiis dolorum, dolor provident
-            atque molestias voluptatum explicabo!
-          </p> -->
-        </div>
-        <div class="service-bottom">
-          <div class="service-item">
-            <div class="icon">
-              <img
-                src="https://img.icons8.com/bubbles/100/000000/services.png"
-              />
-            </div>
-            <h2>Front End Developing</h2>
+      <div class="container">
+        <h1 class="section-title">e<span>x</span>pertise</h1>
+        <div class="services">
+          <div class="service">
+            <i class="fab fa-css3"></i>
+            <h2>front-end developing</h2>
             <p>
               I am quite good at HTML5, CSS3, Bootstrap, javascript, and
               Responsive Web Design. And quite capable in PSD to HTML
               conversion. I have also done a UI/UX course from Coursera. The
               links to my projects are given below.
             </p>
-            <a href="#projects" class="cta-links">View Projects</a>
+            <a class="btn-type1" href="#projects">view projects</a>
           </div>
-          <div class="service-item">
-            <div class="icon">
-              <img
-                src="https://img.icons8.com/bubbles/100/000000/services.png"
-              />
-            </div>
-            <h2>Graphics Designing</h2>
+          <div class="service">
+            <i class="fab fa-figma"></i>
+            <h2>ui/ux design</h2>
             <p>
               I think I have what it takes to be creative. I am also quite
               familiar with graphics designing, Photoshop, and Illustrator. You
               can see a gist of my Graphics designing work in my portfolio given
               below.
             </p>
-            <a href="#graphics" class="cta-links">View Projects</a>
+            <a class="btn-type1" href="#ui">view projects</a>
           </div>
-          <div class="service-item">
-            <div class="icon">
-              <img
-                src="https://img.icons8.com/bubbles/100/000000/services.png"
-              />
-            </div>
-            <h2>Leadership</h2>
+          <div class="service">
+            <i class="fas fa-fist-raised"></i>
+            <h2>leadership</h2>
             <p>
               Effective leadership and effective communication are intertwined.
               And I can communicate, and empathize with people quite naturally.
@@ -106,82 +104,78 @@
         </div>
       </div>
     </section>
-    <!-- End Service Section -->
+    <!-- Services End -->
+    <!-- Services End -->
+    <!-- Services End -->
 
     <!-- Projects Section -->
+    <!-- Projects Section -->
+    <!-- Projects Section -->
     <section id="projects">
-      <div class="projects container">
-        <div class="projects-header">
-          <h1 class="section-title">Recent <span>Projects</span></h1>
-        </div>
-        <div class="all-projects">
-          <div class="project-item">
+      <div class="container">
+        <h1 class="section-title">recent <span>Pro</span>jects</h1>
+        <div class="projects">
+          <div class="project">
             <div class="project-info">
               <h1>Front End Project</h1>
               <h2>E-Commerce Website, Fanuary 20</h2>
               <p>It is a E-Commerce Website</p>
               <a
                 target="_blank"
+                class="gradient-btn"
                 href="https://demozurhem.codetreebd.com/"
-                class="cta-links"
-                >View Project</a
+                >view project</a
               >
             </div>
             <a
-              class="project-img"
               target="_blank"
+              class="linked-img"
               href="https://demozurhem.codetreebd.com/"
             >
-              <!-- <div class="project-img"> -->
-              <img src="img/zurhem.jpg" alt="img" />
-              <!-- </div> -->
+              <img src="img/zurhem.jpg" alt="" />
             </a>
           </div>
-          <div class="project-item">
+          <div class="project">
             <div class="project-info">
               <h1>Front End Project</h1>
               <h2>Official Website, January 10</h2>
               <p>It is a Fully Responsive Website of an IT Farm.</p>
               <a
                 target="_blank"
+                class="gradient-btn"
                 href="https://www.codetreebd.com/"
-                class="cta-links"
-                >View Project</a
+                >view project</a
               >
             </div>
             <a
-              class="project-img"
               target="_blank"
+              class="linked-img"
               href="https://www.codetreebd.com/"
             >
-              <!-- <div class="project-img"> -->
-              <img src="img/codetree.jpg" alt="img" />
-              <!-- </div> -->
+              <img src="img/codetree.jpg" alt="" />
             </a>
           </div>
-          <div class="project-item">
+          <div class="project">
             <div class="project-info">
               <h1>Front End Project</h1>
               <h2>E-Commerce Website, November 20</h2>
               <p>It is a Fully Responsive E-commerce Website.</p>
               <a
                 target="_blank"
+                class="gradient-btn"
                 href="https://gifted-ride-f570f4.netlify.app/"
-                class="cta-links"
-                >View Project</a
+                >view project</a
               >
             </div>
             <a
-              class="project-img"
               target="_blank"
+              class="linked-img"
               href="https://gifted-ride-f570f4.netlify.app/"
             >
-              <!-- <div class="project-img"> -->
-              <img src="img/e-commerce.jpg" alt="img" />
-              <!-- </div> -->
+              <img src="img/e-commerce.jpg" alt="" />
             </a>
           </div>
-          <div class="project-item">
+          <div class="project">
             <div class="project-info">
               <h1>Front End Project</h1>
               <h2>Brown Mafia, November 10</h2>
@@ -194,22 +188,20 @@
               </p>
               <a
                 target="_blank"
+                class="gradient-btn"
                 href="https://mohaiminul69.github.io/brown-mafia-360/"
-                class="cta-links"
-                >View Project</a
+                >view project</a
               >
             </div>
             <a
-              class="project-img"
               target="_blank"
+              class="linked-img"
               href="https://mohaiminul69.github.io/brown-mafia-360/"
             >
-              <!-- <div class="project-img"> -->
-              <img src="img/BrownMafia.jpg" alt="img" />
-              <!-- </div> -->
+              <img src="img/BrownMafia.jpg" alt="" />
             </a>
           </div>
-          <div class="project-item">
+          <div class="project">
             <div class="project-info">
               <h1>JavaScript Projects</h1>
               <h2>JavaScript Project Portfolio</h2>
@@ -217,17 +209,15 @@
                 It is a link to my JavaScript Projects. You can check my best
                 works from here.
               </p>
-              <a target="_blank" href="jsprojects.html" class="cta-links"
-                >View Projects</a
+              <a target="_blank" class="gradient-btn" href="jsProjects.html"
+                >view project</a
               >
             </div>
-            <a class="project-img" target="_blank" href="jsprojects.html">
-              <!-- <div class="project-img"> -->
-              <img src="img/js.jpg" alt="img" />
-              <!-- </div> -->
+            <a target="_blank" class="linked-img" href="jsProjects.html">
+              <img src="img/js.jpg" alt="" />
             </a>
           </div>
-          <div class="project-item">
+          <div class="project">
             <div class="project-info">
               <h1>React JS Projects</h1>
               <h2>React JS Project Portfolio</h2>
@@ -235,161 +225,133 @@
                 It is a link to my React JS Projects. You can check my best
                 works from here.
               </p>
-              <a target="_blank" href="reactprojects.html" class="cta-links"
-                >View Projects</a
+              <a target="_blank" class="gradient-btn" href="reactProjects.html"
+                >view project</a
               >
             </div>
-            <a class="project-img" target="_blank" href="reactprojects.html">
-              <!-- <div class="project-img"> -->
-              <img src="img/React Cover.jpeg" alt="img" />
-              <!-- </div> -->
-            </a>
-          </div>
-          <div id="graphics" class="project-item">
-            <div class="project-info">
-              <h1>Graphics Design</h1>
-              <h2>Graphics Designing Portfolio</h2>
-              <p>
-                It is a link to my Graphics Designing portfolio. You can check
-                my best works from here.
-              </p>
-              <a
-                target="_blank"
-                href="https://www.behance.net/mohaiminul"
-                class="cta-links"
-                >View Portfolio</a
-              >
-            </div>
-            <a
-              class="project-img"
-              target="_blank"
-              href="https://www.behance.net/mohaiminul"
-            >
-              <!-- <div class="project-img"> -->
-              <img src="img/Graphics.jpg" alt="img" />
-              <!-- </div> -->
+            <a target="_blank" class="linked-img" href="reactProjects.html">
+              <img src="img/React Cover.jpeg" alt="" />
             </a>
           </div>
         </div>
       </div>
     </section>
-    <!-- End Projects Section -->
+    <!-- Projects Section End -->
+    <!-- Projects Section End -->
+    <!-- Projects Section End -->
 
     <!-- About Section -->
+    <!-- About Section -->
+    <!-- About Section -->
     <section id="about">
-      <div class="about container">
+      <div class="container">
         <div class="col-left">
+          <i class="fas fa-chevron-up"></i>
           <div class="about-img">
             <img
-              src="./img/11182121_1118642228146719_4071945820414559676_n.jpg"
-              alt="img"
+              src="img/11182121_1118642228146719_4071945820414559676_n.jpg"
+              alt=""
             />
           </div>
         </div>
         <div class="col-right">
           <h1 class="section-title">About <span>me</span></h1>
-          <h2>Front End Developer</h2>
-          <p>
-            I am quite familiar with HTML5, CSS3, PHP, Bootstrap, Java,
-            javascript, and Responsive Web Design. I can build Attractive
-            webpages, and quite capable in PSD to HTML conversion. I know how to
-            handle API. Also, have a good UI/UX sense. I have done a UI/UX
-            course from Coursera.
+          <h2>front-end developer</h2>
+          <p class="qoute-pera">
+            <span class="qoutation">
+              <i class="fas fa-quote-left"></i>
+            </span>
+            <span class="qoute">
+              When I am sad,<br />
+              I stop being sad,<br />
+              And make a <span>Website</span> Instead -
+            </span>
+            <span class="qoutation">
+              <i class="fas fa-quote-right"></i>
+            </span>
           </p>
-          <a href="./resume.pdf" target="_blank" class="cta">View Resume</a>
+          <p class="skill-set-details">
+            <span>While doing that I use...</span><br />
+            HTML5, CSS3, PHP, Bootstrap, Java, javascript, and Responsive Web
+            Design. I can build Attractive webpages, and quite capable in PSD to
+            HTML conversion. I know how to handle API. Also, have a good UI/UX
+            sense. I have done a UI/UX course from Coursera.
+          </p>
+          <a class="btn-type1" href="./resume.pdf" target="_blank" class="cta"
+            >View Resume</a
+          >
         </div>
       </div>
     </section>
-    <!-- End About Section -->
+    <!-- About Section End -->
+    <!-- About Section End -->
+    <!-- About Section End -->
 
     <!-- Contact Section -->
+    <!-- Contact Section -->
+    <!-- Contact Section -->
     <section id="contact">
-      <div class="contact container">
-        <div>
-          <h1 class="section-title">Contact <span>info</span></h1>
+      <div class="container">
+        <h1 class="section-title">contact <span>Info</span></h1>
+        <div class="contact-divs">
+          <div class="left-divs">
+            <div class="phone-div">
+              <i class="fas fa-mobile-alt"></i>
+              <h1>contact number</h1>
+              <p>+88 017 8650 3069</p>
+            </div>
+            <div class="email-div">
+              <i class="fas fa-at"></i>
+              <h1>email address</h1>
+              <p>mohaiminul.islam.shishir@gmail.com</p>
+            </div>
+          </div>
+          <div class="right-div">
+            <i class="fas fa-link"></i>
+            <h1>social links</h1>
+            <ul class="social-links">
+              <li>
+                <a href="#"
+                  ><i class="fab fa-facebook-f" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fab fa-instagram" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fab fa-linkedin-in" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fab fa-behance" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-github" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="contact-items">
-          <div class="contact-item">
-            <div class="icon">
-              <img src="https://img.icons8.com/bubbles/100/000000/phone.png" />
-            </div>
-            <div class="contact-info">
-              <h1>Phone</h1>
-              <h2>01786503069</h2>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="icon">
-              <img
-                src="https://img.icons8.com/bubbles/100/000000/new-post.png"
-              />
-            </div>
-            <div class="contact-info">
-              <h1>Email</h1>
-              <h2>mohaiminul69@gmail.com</h2>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="icon">
-              <img
-                src="https://img.icons8.com/bubbles/100/000000/map-marker.png"
-              />
-            </div>
-            <div class="contact-info">
-              <h1>Address</h1>
-              <h2>Dhaka, Bangladesh</h2>
-            </div>
-          </div>
+        <div class="footer">
+          <p>
+            Site managed by <span>mohaiminul islam shishir</span>. Copyright ©
+            <span>shishir</span> 2021. All rights reserved.
+          </p>
         </div>
       </div>
     </section>
-    <!-- End Contact Section -->
+    <!-- Contact Section End -->
+    <!-- Contact Section End -->
+    <!-- Contact Section End -->
 
-    <!-- Footer -->
-    <section id="footer">
-      <div class="footer container">
-        <div class="brand">
-          <h1>
-            <span>M</span>ohaiminul <span>I</span>slam <span>S</span>hishir
-          </h1>
-        </div>
-        <h2>Social Links</h2>
-        <div class="social-icon">
-          <div class="social-item">
-            <a target="_blank" href="https://www.facebook.com/dew.haven"
-              ><img
-                src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"
-            /></a>
-          </div>
-          <div class="social-item">
-            <a target="_blank" href="https://www.instagram.com/dew_haven69/"
-              ><img
-                src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"
-            /></a>
-          </div>
-          <div class="social-item">
-            <a target="_blank" href="https://www.linkedin.com/in/shishir69/"
-              ><img
-                src="https://img.icons8.com/bubbles/100/000000/linkedin.png"
-            /></a>
-          </div>
-          <div class="social-item">
-            <a target="_blank" href="https://www.behance.net/mohaiminul"
-              ><img src="https://img.icons8.com/bubbles/100/000000/behance.png"
-            /></a>
-          </div>
-          <div class="social-item">
-            <a target="_blank" href="https://github.com/Mohaiminul69"
-              ><img
-                src="https://img.icons8.com/bubbles/100/000000/github.png"
-              />
-            </a>
-          </div>
-        </div>
-        <p>Copyright © 2020 Shishir. All rights reserved</p>
-      </div>
-    </section>
-    <!-- End Footer -->
-    <script src="./app.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/myparticles.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
