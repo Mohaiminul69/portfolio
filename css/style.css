@@ -34,8 +34,8 @@
   width: 100%;
   height: 100%;
   opacity: 0;
-  border-top: 2px solid crimson;
-  border-bottom: 2px solid crimson;
+  border-top: 2px solid #dc143c;
+  border-bottom: 2px solid #dc143c;
   transform: scale(0.1, 1);
   transition: all 0.3s;
 }
@@ -64,7 +64,7 @@
   z-index: -1;
   transition: all 0.3s;
   background-color: rgba(255, 255, 255, 0.1);
-  background-color: crimson;
+  background-color: #dc143c;
   border: 2px solid #c00a2f;
   box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.55), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.25);
 }
@@ -103,7 +103,7 @@
 }
 
 .gradient-btn:hover {
-  border: 1px solid crimson;
+  border: 1px solid #dc143c;
   color: white;
   color: #fff;
   background-position: 99% 50%;
@@ -220,7 +220,7 @@ img {
 }
 
 .section-title span {
-  color: crimson;
+  color: #dc143c;
 }
 
 #main-nav {
@@ -257,7 +257,7 @@ img {
 }
 
 #main-nav .container .nav-bar .brand a span {
-  color: crimson;
+  color: #dc143c;
 }
 
 #main-nav .container .nav-bar .nav-list .hamburger {
@@ -338,7 +338,7 @@ img {
   bottom: 1px;
   width: 100%;
   height: 2px;
-  background: crimson;
+  background: #dc143c;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.3s ease-in-out;
@@ -350,7 +350,7 @@ img {
 }
 
 #main-nav .container .nav-bar .nav-list .menu li a:hover {
-  color: crimson;
+  color: #dc143c;
 }
 
 #hero {
@@ -378,7 +378,7 @@ img {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.95);
+  background-image: linear-gradient(26deg, rgba(66, 19, 28, 0.95) 0%, rgba(0, 0, 0, 0.95) 45%);
   z-index: -1;
 }
 
@@ -400,13 +400,13 @@ img {
   left: 0;
   width: 0;
   height: 100%;
-  background: crimson;
+  background: #dc143c;
   animation: text_reveal_box 1.5s ease;
   animation-delay: 1s;
 }
 
 #hero h1 span {
-  color: crimson;
+  color: #dc143c;
 }
 
 #hero h1:nth-child(1) {
@@ -695,7 +695,7 @@ img {
   width: 78%;
   height: 100%;
   border-radius: 50px;
-  border: 10px solid crimson;
+  border: 10px solid #dc143c;
   background: rgba(0, 0, 0, 0.445);
   transition: 0.3s ease-in-out;
   z-index: -1;
@@ -826,7 +826,7 @@ img {
 }
 
 #contact .container .contact-divs i {
-  color: crimson;
+  color: #dc143c;
   font-size: 2.2rem;
   margin-bottom: 4px;
 }
@@ -967,7 +967,7 @@ img {
 }
 
 #contact .container .footer span {
-  color: crimson;
+  color: #dc143c;
   text-transform: capitalize;
 }
 
@@ -1165,7 +1165,7 @@ img {
     letter-spacing: initial;
   }
   #main-nav .container .nav-bar .menu li:hover a {
-    color: crimson;
+    color: #dc143c;
   }
   #main-nav .container .nav-bar .menu li a {
     font-size: 2.5rem;
