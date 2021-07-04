@@ -445,6 +445,28 @@ img {
 
 #services {
   background: url(../img/pexels-photo-3617502.jpeg) no-repeat center center/cover;
+  z-index: 1;
+  position: relative;
+}
+
+#services::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+#services::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  background: linear-gradient(to top, #292929, transparent);
 }
 
 #services .container {
