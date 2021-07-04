@@ -10,6 +10,22 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background: rgba(0, 0, 0, 0.95);
+  animation: scrllbar 5s linear infinite;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dc143c;
+  border-radius: 10px;
+  background: linear-gradient(to top, crimson, #3d0808);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to top, rgba(220, 20, 60, 0.7), rgba(61, 8, 8, 0.7));
+}
+
 .btn-type1, .btn-secondary, .btn-type2 {
   display: inline-block;
   padding: 8px 20px;
@@ -1707,6 +1723,16 @@ img {
   100% {
     opacity: 0;
     transform: scale(1.4);
+  }
+}
+
+@keyframes scrollbar {
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
   }
 }
 /*# sourceMappingURL=style.css.map */

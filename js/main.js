@@ -2,6 +2,13 @@ const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".menu");
 const menuItem = document.querySelectorAll(".menu li a");
 const nav = document.querySelector("#main-nav");
+// const progressbar = document.querySelector("#progressbar");
+
+// const totalHeight = document.body.scrollHeight - window.innerHeight;
+// window.onscroll = () => {
+//   const progressHeight = (window.pageYOffset / totalHeight) * 100;
+//   progressbar.style.height = progressHeight + "%";
+// };
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
