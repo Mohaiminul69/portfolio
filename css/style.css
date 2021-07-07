@@ -918,9 +918,20 @@ img {
 
 #contact .container .contact-divs .left-divs .email-div p {
   font-size: 1.4rem;
-  width: 70%;
+  width: 75%;
   border-bottom: 2px solid #cc9411;
   padding-bottom: 4px;
+  cursor: pointer;
+}
+
+#contact .container .contact-divs .left-divs .email-div p i {
+  font-size: 1rem;
+  background: #dc143c;
+  color: white;
+  margin-left: 6px;
+  padding: 4px 6px 6px 4px;
+  border-radius: 0 7px 7px 0;
+  cursor: pointer;
 }
 
 #contact .container .contact-divs .right-div {

@@ -2,6 +2,7 @@ const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".menu");
 const menuItem = document.querySelectorAll(".menu li a");
 const nav = document.querySelector("#main-nav");
+const emailId = document.querySelector("#email");
 // const progressbar = document.querySelector("#progressbar");
 
 // const totalHeight = document.body.scrollHeight - window.innerHeight;
@@ -51,3 +52,21 @@ doc.ready(function () {
     startDelay: 3000,
   });
 });
+
+emailId.addEventListener("click", copyText);
+
+function copyText() {
+  const text = emailId.textContent;
+  /* Select the text field */
+  const fakeElement = document.createElement("textarea");
+  fakeElement.value = text;
+  document.body.appendChild(fakeElement);
+  fakeElement.select();
+  fakeElement.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+  document.body.removeChild(fakeElement);
+  /* Alert the copied text */
+  alert("Copied to Clipboard: " + text);
+}
