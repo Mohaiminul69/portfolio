@@ -74,17 +74,16 @@ function copyText() {
 //smooth scrolling
 //smooth scrolling
 //smooth scrolling
-const body = document.body;
-const speed = 0.04;
+// const speed = 0.04;
 
-var offset = 0;
-function smoothScroll() {
-  offset += (window.pageYOffset - offset) * speed;
-  var scroll = `translateY(-${offset}px)`;
-  body.style.transform = scroll;
-  callScroll = requestAnimationFrame(smoothScroll);
-}
-smoothScroll();
+// var offset = 0;
+// function smoothScroll() {
+//   offset += (window.pageYOffset - offset) * speed;
+//   var scroll = `translateY(-${offset}px)`;
+//   body.style.transform = scroll;
+//   callScroll = requestAnimationFrame(smoothScroll);
+// }
+// smoothScroll();
 //smooth scrolling
 //smooth scrolling
 //smooth scrolling

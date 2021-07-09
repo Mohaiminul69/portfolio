@@ -6,13 +6,46 @@ html {
   scroll-behavior: smooth;
 }
 
+.cursor {
+  width: 12px;
+  height: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  background: $primary-color;
+  border: 2px solid $primary-color;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 50;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  // transition: transform 0.3s ease;
+  user-select: none;
+  transform-origin: center;
+  transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+    0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+  backdrop-filter: hue-rotate(120deg);
+}
+.link-grow {
+  background: transparent;
+  transform: scale(2.5);
+  border: 1px solid $primary-color;
+  cursor: none;
+}
+
 body {
+  // For cursor
+  // For cursor
+  // For cursor
+  position: relative;
+  cursor: none;
+  // For cursor
+  // For cursor
+  // For cursor
   font-family: $font-stack;
   // Added Only for smooth scrolling
   // Added Only for smooth scrolling
   // Added Only for smooth scrolling
   overflow-x: hidden;
-  height: 100px;
+  // height: 100px;
   // Added Only for smooth scrolling
   // Added Only for smooth scrolling
   // Added Only for smooth scrolling
@@ -1641,4 +1674,9 @@ img {
   50% {
     filter: hue-rotate(360deg);
   }
+}
+a,
+.btn-type1,
+.btn-type2 {
+  cursor: none;
 }
