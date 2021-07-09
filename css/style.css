@@ -199,6 +199,8 @@ html {
 
 body {
   font-family: gill;
+  overflow-x: hidden;
+  height: 100px;
 }
 
 a {
