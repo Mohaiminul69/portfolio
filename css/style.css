@@ -244,6 +244,12 @@ html {
   cursor: none;
 }
 
+.cursorClicked {
+  transform: translate(-50%, -50%) scale(0.5);
+  transform-origin: center;
+  transition: none;
+}
+
 .img-cursor {
   border: 1px solid #dc143c;
   transform: scale(6);

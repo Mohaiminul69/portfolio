@@ -28,6 +28,16 @@ function cursor(e) {
   mouseFollower.style.left = `${e.pageX}px`;
 }
 
+body.addEventListener("mousedown", (e) => {
+  if (e) {
+    mouseCursor.classList.add("cursorClicked");
+  }
+});
+body.addEventListener("mouseup", (e) => {
+  if (e) {
+    mouseCursor.classList.remove("cursorClicked");
+  }
+});
 body.addEventListener("mouseover", () => {
   mouseCursor.classList.add("cursor");
   mouseFollower.classList.add("cursor-follower");
