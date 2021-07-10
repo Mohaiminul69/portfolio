@@ -197,6 +197,11 @@ html {
   scroll-behavior: smooth;
 }
 
+.cursor img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .cursor {
   display: none;
   width: 12px;
@@ -237,6 +242,23 @@ html {
   transform: scale(2.5);
   border: 1px solid #dc143c;
   cursor: none;
+}
+
+.img-cursor {
+  border: 1px solid #dc143c;
+  transform: scale(6);
+}
+
+.img-cursor::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("/img/view-projects.jpg") no-repeat center center/cover;
+  border-radius: 50%;
+  z-index: 51;
 }
 
 body {

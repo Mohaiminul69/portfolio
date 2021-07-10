@@ -5,6 +5,8 @@ const body = document.body;
 let mouseCursor = document.querySelector(".cursor");
 const mouseFollower = document.querySelector(".cursor-follower");
 let navLinks = document.querySelectorAll("a");
+let allLinks = document.querySelectorAll("a");
+let imgLinks = document.querySelectorAll(".linked-img");
 
 window.addEventListener("mousemove", cursor);
 
@@ -35,7 +37,7 @@ body.addEventListener("mouseleave", () => {
   mouseFollower.classList.remove("cursor-follower");
 });
 
-navLinks.forEach((link) => {
+allLinks.forEach((link) => {
   link.addEventListener("mouseover", () => {
     mouseCursor.classList.add("link-grow");
     mouseFollower.style.display = "none";
@@ -43,6 +45,16 @@ navLinks.forEach((link) => {
   link.addEventListener("mouseleave", () => {
     mouseFollower.style.display = "block";
     mouseCursor.classList.remove("link-grow");
+  });
+});
+imgLinks.forEach((link) => {
+  link.addEventListener("mouseover", () => {
+    mouseCursor.classList.add("img-cursor");
+    mouseFollower.style.display = "none";
+  });
+  link.addEventListener("mouseleave", () => {
+    mouseFollower.style.display = "block";
+    mouseCursor.classList.remove("img-cursor");
   });
 });
 // Mouse
