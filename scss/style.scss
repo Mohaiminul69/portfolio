@@ -7,6 +7,7 @@ html {
 }
 
 .cursor {
+  display: none;
   width: 12px;
   height: 12px;
   background: rgba(0, 0, 0, 0.3);
@@ -23,6 +24,24 @@ html {
   transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
     0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
   backdrop-filter: hue-rotate(120deg);
+}
+.cursor-follower {
+  display: none;
+  border: 2px solid $primary-color;
+  position: absolute;
+  background-color: rgba(145, 16, 42, 0.6);
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  z-index: 1;
+  // transition: 1.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+  //   0.4s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+  transition: 0.5s cubic-bezier(0.13, 0.53, 0.69, 2);
+  user-select: none;
+  pointer-events: none;
+  z-index: 49;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
 }
 .link-grow {
   background: transparent;
@@ -727,7 +746,6 @@ img {
             width: 75%;
             border-bottom: 2px solid $secondary-color;
             padding-bottom: 4px;
-            cursor: pointer;
             i {
               font-size: 1rem;
               background: $primary-color;
@@ -735,7 +753,6 @@ img {
               margin-left: 6px;
               padding: 4px 6px 6px 4px;
               border-radius: 0 7px 7px 0;
-              cursor: pointer;
             }
           }
         }
