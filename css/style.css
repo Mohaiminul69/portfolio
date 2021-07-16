@@ -1010,6 +1010,7 @@ img {
 #contact .container .contact-divs .right-div .social-links {
   display: flex;
   margin-top: 10px;
+  padding: 0;
 }
 
 #contact .container .contact-divs .right-div .social-links li:not(:last-child) {

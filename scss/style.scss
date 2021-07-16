@@ -783,6 +783,7 @@ img {
         .social-links {
           display: flex;
           margin-top: 10px;
+          padding: 0;
           li {
             &:not(:last-child) {
               margin-right: 1.6rem;
