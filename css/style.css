@@ -42,6 +42,10 @@
   z-index: 1;
 }
 
+.btn-type1:hover {
+  color: white;
+}
+
 .btn-type1::before {
   content: "";
   position: absolute;
@@ -136,6 +140,7 @@
 .btn-type2:hover {
   letter-spacing: 4px;
   box-shadow: none;
+  color: white;
 }
 
 .btn-type2::before {
@@ -195,6 +200,7 @@
 
 html {
   scroll-behavior: smooth;
+  background: linear-gradient(to right, #080808, #0f0f0f);
 }
 
 .cursor img {
@@ -268,7 +274,6 @@ html {
 }
 
 body {
-  position: relative;
   cursor: none;
   font-family: gill;
   overflow-x: hidden;
@@ -349,7 +354,7 @@ img {
   color: #dc143c;
 }
 
-#main-nav .container .nav-bar .nav-list .hamburger {
+#main-nav .container .nav-bar .menu-list .hamburger {
   position: relative;
   width: 60px;
   height: 60px;
@@ -363,7 +368,7 @@ img {
   transform: scale(0.8);
 }
 
-#main-nav .container .nav-bar .nav-list .hamburger::after {
+#main-nav .container .nav-bar .menu-list .hamburger::after {
   content: "";
   position: absolute;
   border-radius: 50%;
@@ -373,7 +378,7 @@ img {
   animation: hamburger_pulse 1s ease infinite;
 }
 
-#main-nav .container .nav-bar .nav-list .hamburger .bar {
+#main-nav .container .nav-bar .menu-list .hamburger .bar {
   height: 2px;
   width: 30px;
   position: relative;
@@ -381,7 +386,7 @@ img {
   z-index: -1;
 }
 
-#main-nav .container .nav-bar .nav-list .hamburger .bar::after, #main-nav .container .nav-bar .nav-list .hamburger .bar::before {
+#main-nav .container .nav-bar .menu-list .hamburger .bar::after, #main-nav .container .nav-bar .menu-list .hamburger .bar::before {
   content: "";
   position: absolute;
   top: 0;
@@ -392,35 +397,36 @@ img {
   transition: all 0.3s ease-in-out;
 }
 
-#main-nav .container .nav-bar .nav-list .hamburger .bar::after {
+#main-nav .container .nav-bar .menu-list .hamburger .bar::after {
   top: 8px;
 }
 
-#main-nav .container .nav-bar .nav-list .hamburger .bar::before {
+#main-nav .container .nav-bar .menu-list .hamburger .bar::before {
   top: -8px;
 }
 
-#main-nav .container .nav-bar .nav-list .hamburger.active .bar::after,
-#main-nav .container .nav-bar .nav-list .hamburger.active .bar::before {
+#main-nav .container .nav-bar .menu-list .hamburger.active .bar::after,
+#main-nav .container .nav-bar .menu-list .hamburger.active .bar::before {
   top: 0;
 }
 
-#main-nav .container .nav-bar .nav-list .menu {
+#main-nav .container .nav-bar .menu-list .menu {
   display: flex;
+  margin: 0;
 }
 
-#main-nav .container .nav-bar .nav-list .menu li a {
+#main-nav .container .nav-bar .menu-list .menu li a {
   font-weight: 500;
   letter-spacing: 0.2rem;
   color: white;
   text-transform: uppercase;
-  padding: 20px;
+  padding: 18px;
   display: block;
   transition: 0.3s ease-in-out;
   position: relative;
 }
 
-#main-nav .container .nav-bar .nav-list .menu li a::before {
+#main-nav .container .nav-bar .menu-list .menu li a::before {
   content: " ";
   position: absolute;
   left: 0;
@@ -433,12 +439,12 @@ img {
   transition: transform 0.3s ease-in-out;
 }
 
-#main-nav .container .nav-bar .nav-list .menu li a:hover::before {
+#main-nav .container .nav-bar .menu-list .menu li a:hover::before {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-#main-nav .container .nav-bar .nav-list .menu li a:hover {
+#main-nav .container .nav-bar .menu-list .menu li a:hover {
   color: #dc143c;
 }
 
@@ -636,15 +642,6 @@ img {
   text-shadow: none;
 }
 
-#services .container .services .service .btn-type1::after {
-  height: 90%;
-  width: 98%;
-}
-
-#services .container .services .service .btn-type1::before {
-  top: -2px;
-}
-
 #services .container .services .service:nth-child(1) i {
   color: #125686;
 }
@@ -728,11 +725,6 @@ img {
 
 #projects .container .projects .project .project-info p {
   margin: 10px 0;
-}
-
-#projects .container .projects .project .btn-type1 {
-  margin: 0;
-  margin-top: 30px;
 }
 
 #projects .container .projects .project .linked-img {
@@ -888,14 +880,6 @@ img {
 
 #about .container .col-right .skill-set-details span {
   color: #cc9411;
-}
-
-#about .container .col-right .btn-type1 {
-  margin: 30px 0 0 0;
-}
-
-#about .container .col-right .btn-type1::after {
-  height: 90%;
 }
 
 #contact {
@@ -1261,7 +1245,7 @@ img {
 }
 
 @media only screen and (max-width: 800px) {
-  #main-nav .container .nav-bar .nav-list .hamburger {
+  #main-nav .container .nav-bar .menu-list .hamburger {
     display: flex;
   }
   #main-nav .container .nav-bar .menu {

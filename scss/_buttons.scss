@@ -13,6 +13,9 @@
   transition: all 0.3s;
   letter-spacing: 1px;
   z-index: 1;
+  &:hover {
+    color: $light-color;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -117,6 +120,7 @@ $ease_out: cubic-bezier(0.165, 0.84, 0.44, 1);
   &:hover {
     letter-spacing: 4px;
     box-shadow: none;
+    color: white;
   }
   &::before {
     content: "";
