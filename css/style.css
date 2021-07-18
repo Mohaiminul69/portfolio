@@ -27,7 +27,7 @@
 }
 
 .modal-content {
-  background: url("/img/pexels-photo-3617502.jpeg") no-repeat center center/cover;
+  background: url("../img/pexels-photo-3617502.jpeg") no-repeat center center/cover;
   color: white;
   cursor: none !important;
   position: relative;
