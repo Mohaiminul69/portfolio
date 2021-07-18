@@ -68,7 +68,7 @@ function copyText() {
   document.execCommand("copy");
   document.body.removeChild(fakeElement);
   /* Alert the copied text */
-  alert("Copied to Clipboard: " + text);
+  // alert("Copied to Clipboard: " + text);
 }
 
 //smooth scrolling

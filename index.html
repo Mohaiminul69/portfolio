@@ -11,7 +11,7 @@
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Portfolio</title>
   </head>
@@ -332,7 +332,21 @@
             <div class="email-div">
               <i class="fas fa-at"></i>
               <h1>email address</h1>
-              <p data-bs-toggle="tooltip" data-bs-placement="top" title="Click to Copy Email" id="email">mohaiminul.islam.shishir@gmail.com<i data-bs-toggle="tooltip" data-bs-placement="top" title="Click to Copy Email" class="far fa-clipboard email"></i></i></p>
+              <p
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Click to Copy Email"
+                id="email"
+              >
+                mohaiminul.islam.shishir@gmail.com<i
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Click to Copy Email"
+                  class="far fa-clipboard email"
+                ></i>
+              </p>
             </div>
           </div>
           <div class="right-div">
@@ -378,6 +392,36 @@
     <!-- Contact Section End -->
     <!-- Contact Section End -->
     <!-- Contact Section End -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Email Copied !</h5>
+            <i
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              class="fas fa-times"
+            ></i>
+          </div>
+          <div class="modal-body">
+            Email "mohaiminul.islam.shishir@gmail.com" copied to clipboard.
+          </div>
+          <div class="modal-footer">
+            <button class="gradient-btn" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
 
     <script src="js/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>

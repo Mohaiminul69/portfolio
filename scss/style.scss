@@ -19,7 +19,7 @@ html {
   border: 2px solid $primary-color;
   border-radius: 50%;
   position: absolute;
-  z-index: 50;
+  z-index: 1070;
   transform: translate(-50%, -50%);
   pointer-events: none;
   // transition: transform 0.3s ease;
@@ -37,13 +37,12 @@ html {
   width: 20px;
   height: 20px;
   border-radius: 100%;
-  z-index: 1;
   // transition: 1.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
   //   0.4s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
   transition: 0.5s cubic-bezier(0.13, 0.53, 0.69, 2);
   user-select: none;
   pointer-events: none;
-  z-index: 49;
+  z-index: 1069;
   transform: translate(-50%, -50%);
   transform-origin: center;
 }
@@ -70,7 +69,7 @@ html {
     position: absolute;
     background: url("../img/view-projects.jpg") no-repeat center center/cover;
     border-radius: 50%;
-    z-index: 51;
+    z-index: 1071;
   }
 }
 

@@ -26,6 +26,42 @@
   background: linear-gradient(to top, rgba(220, 20, 60, 0.7), rgba(61, 8, 8, 0.7));
 }
 
+.modal-content {
+  background: url("/img/pexels-photo-3617502.jpeg") no-repeat center center/cover;
+  color: white;
+  cursor: none !important;
+  position: relative;
+  border-radius: 15px;
+  z-index: 1;
+  border: none;
+  box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.45), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.25);
+}
+
+.modal-content i {
+  font-size: 20px;
+}
+
+.modal-content .modal-header i {
+  cursor: none;
+  margin-right: 5px;
+}
+
+.modal-content .modal-footer button {
+  cursor: none;
+  margin-top: 5px;
+}
+
+.modal-content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
 .btn-type1, .btn-secondary, .btn-type2 {
   display: inline-block;
   padding: 8px 20px;
@@ -217,7 +253,7 @@ html {
   border: 2px solid #dc143c;
   border-radius: 50%;
   position: absolute;
-  z-index: 50;
+  z-index: 1070;
   transform: translate(-50%, -50%);
   pointer-events: none;
   user-select: none;
@@ -234,11 +270,10 @@ html {
   width: 20px;
   height: 20px;
   border-radius: 100%;
-  z-index: 1;
   transition: 0.5s cubic-bezier(0.13, 0.53, 0.69, 2);
   user-select: none;
   pointer-events: none;
-  z-index: 49;
+  z-index: 1069;
   transform: translate(-50%, -50%);
   transform-origin: center;
 }
@@ -270,7 +305,7 @@ html {
   position: absolute;
   background: url("../img/view-projects.jpg") no-repeat center center/cover;
   border-radius: 50%;
-  z-index: 51;
+  z-index: 1071;
 }
 
 body {
