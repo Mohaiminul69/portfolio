@@ -566,7 +566,7 @@ img {
 }
 
 #hero .btn-type2 {
-  margin-top: 60px;
+  margin-top: 65px;
   font-size: 1.5rem;
   opacity: 0;
   animation: button_reveal 1.5s ease forwards;
