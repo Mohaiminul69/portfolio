@@ -1,0 +1,27 @@
+.project-details {
+  display: block;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.project-details::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+.project-details img {
+  border-radius: 8px;
+  box-shadow: 0.25em 0.25em 0.75em rgb(0 0 0 / 55%),
+    0.125em 0.125em 0.25em rgb(0 0 0 / 25%);
+}
+.project-details ul {
+  list-style: disc;
+}
