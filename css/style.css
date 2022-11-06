@@ -722,7 +722,7 @@ img {
 }
 
 #projects .container .projects::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to left, rgba(220, 20, 60, 0.7), rgba(61, 8, 8, 0.7));
+  background: linear-gradient(to right, rgba(220, 20, 60, 0.7), rgba(61, 8, 8, 0.7));
 }
 
 #projects .container .projects .project {
