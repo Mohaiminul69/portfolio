@@ -708,24 +708,33 @@ img {
 
 #projects .container .projects {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border-radius: 25px;
-  overflow: hidden;
-  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.562), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.25);
+  align-items: flex-end;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+#projects .container .projects::-webkit-scrollbar {
+  height: 8px;
+}
+
+#projects .container .projects::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, crimson, #3d0808);
+}
+
+#projects .container .projects::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to left, rgba(220, 20, 60, 0.7), rgba(61, 8, 8, 0.7));
 }
 
 #projects .container .projects .project {
-  height: 400px;
-  margin: 0;
-  width: 100%;
+  height: 100%;
+  margin: 20px 10px;
+  width: 280px;
+  min-width: 280px;
   display: flex;
-  flex-direction: row;
-}
-
-#projects .container .projects .project:nth-child(even) {
-  flex-direction: row-reverse;
+  flex-direction: column-reverse;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.562), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.25);
+  border-radius: 25px 5px 10px 10px;
+  overflow: hidden;
 }
 
 #projects .container .projects .project:hover img {
@@ -734,37 +743,42 @@ img {
 
 #projects .container .projects .project .project-info {
   padding: 30px;
-  flex-basis: 50%;
-  height: 100%;
+  height: 250px;
   display: flex;
   text-align: left;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   background-image: linear-gradient(60deg, #0d0d0ed3 0%, rgba(126, 38, 51, 0.8) 100%);
   color: white;
 }
 
 #projects .container .projects .project .project-info h1 {
-  font-size: 4rem;
+  font-size: 1.5rem;
   font-weight: 500;
   font-family: "Kaushan Script", cursive;
   text-transform: capitalize;
 }
 
 #projects .container .projects .project .project-info h2 {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: 500;
-  margin-top: 20px;
+  margin-top: 10px;
+  color: #a5a5a5;
+  display: none;
 }
 
 #projects .container .projects .project .project-info p {
-  margin: 10px 0;
+  margin: 5px 0;
+  color: #cccccc;
+}
+
+#projects .container .projects .project .project-info .gradient-btn {
+  margin-top: auto;
 }
 
 #projects .container .projects .project .linked-img {
-  flex-basis: 50%;
-  height: 100%;
+  height: 185px;
   overflow: hidden;
   position: relative;
 }
@@ -1197,15 +1211,6 @@ img {
   #services .container {
     height: fit-content;
   }
-  #projects {
-    padding: 20px;
-  }
-  #projects .container .projects .project .project-info h1 {
-    font-size: 3rem;
-  }
-  #projects .container .projects .project .project-info h2 {
-    font-size: 1.3rem;
-  }
   #about .container {
     height: fit-content;
   }
@@ -1240,41 +1245,6 @@ img {
   }
   #services .container .services .service {
     flex-basis: 40%;
-  }
-  #projects {
-    padding: 20px;
-  }
-  #projects .container .projects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    box-shadow: none;
-  }
-  #projects .container .projects .project {
-    flex-direction: column;
-    width: 80%;
-    height: fit-content;
-    margin: 20px auto;
-    overflow: hidden;
-    border-radius: 10px;
-  }
-  #projects .container .projects .project:nth-child(even) {
-    flex-direction: column;
-  }
-  #projects .container .projects .project .project-info h1 {
-    font-size: 3rem;
-  }
-  #projects .container .projects .project .project-info h2 {
-    font-size: 1.3rem;
-  }
-  #projects .container .projects .project .linked-img {
-    flex-basis: 50%;
-    height: 100%;
-    overflow: hidden;
-  }
-  #projects .container .projects .project .linked-img img {
-    transition: 0.4s ease-in-out;
   }
   #about .container .col-left {
     max-width: 400px;
@@ -1443,18 +1413,6 @@ img {
   }
   #services .container .services .service {
     flex-basis: 70%;
-  }
-  #projects {
-    padding: 20px;
-  }
-  #projects .container .projects .project {
-    width: 95%;
-  }
-  #projects .container .projects .project .project-info h1 {
-    font-size: 3rem;
-  }
-  #projects .container .projects .project .project-info h2 {
-    font-size: 1.3rem;
   }
   #about .container {
     height: fit-content;
@@ -1644,21 +1602,6 @@ img {
   }
   #services .container .services .service {
     flex-basis: 90%;
-  }
-  #projects {
-    padding: 20px;
-  }
-  #projects .container {
-    padding: 10px 0;
-  }
-  #projects .container .projects .project {
-    width: 100%;
-  }
-  #projects .container .projects .project .project-info h1 {
-    font-size: 2.5rem;
-  }
-  #projects .container .projects .project .project-info h2 {
-    font-size: 1rem;
   }
   #about .container {
     height: fit-content;
