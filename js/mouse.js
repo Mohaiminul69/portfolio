@@ -12,6 +12,7 @@ window.addEventListener("mousemove", cursor);
 
 var cursorDisplay = null;
 function turnOnCursor() {
+  if (window.matchMedia("(max-width: 767px)").matches) return;
   if (cursorDisplay === "block") {
     return;
   }
