@@ -38,7 +38,7 @@ doc.ready(function () {
   "use strict";
   var typed = new Typed(".typed", {
     strings: [
-      "a Front-end Web Developer",
+      "a Software Engineer",
       "Passionate",
       "Diligent",
       "Punctual...",
