@@ -2,473 +2,393 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mohaiminul Islam Shishir — software engineer building web and mobile apps with React, Next.js, React Native and Node.js."
+    />
+    <!-- Link previews -->
+    <link rel="canonical" href="https://mohaiminul69.github.io/portfolio/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mohaiminul Islam Shishir" />
+    <meta property="og:title" content="Mohaiminul Islam Shishir — Software Engineer" />
+    <meta property="og:description" content="Mohaiminul Islam Shishir — software engineer building web and mobile apps with React, Next.js, React Native and Node.js." />
+    <meta property="og:url" content="https://mohaiminul69.github.io/portfolio/" />
+    <meta property="og:image" content="https://mohaiminul69.github.io/portfolio/img/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Mohaiminul Islam Shishir — software engineer building web and mobile apps" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mohaiminul Islam Shishir — Software Engineer" />
+    <meta name="twitter:description" content="Mohaiminul Islam Shishir — software engineer building web and mobile apps with React, Next.js, React Native and Node.js." />
+    <meta name="twitter:image" content="https://mohaiminul69.github.io/portfolio/img/og-image.png" />
+    <meta name="theme-color" content="#0e0e10" />
+    <!-- /Link previews -->
     <link rel="shortcut icon" href="img/man-of-steal.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
     />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/home.css" />
+    <title>Mohaiminul Islam Shishir — Software Engineer</title>
   </head>
   <body>
-    <!-- <div id="progressbar"></div>
-    <div id="scrollPath"></div> -->
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
     <!-- Navbar -->
-    <!-- Navbar -->
-    <!-- Navbar -->
-    <nav id="main-nav">
-      <div class="container">
-        <div class="nav-bar">
-          <div class="brand">
-            <a href="#hero">mohaiminul islam <span>shishir</span></a>
-          </div>
-          <div class="menu-list">
-            <div class="hamburger">
-              <div class="bar"></div>
-            </div>
-            <ul class="menu">
-              <li><a href="#hero" data-after="home">home</a></li>
-              <li><a href="#services" data-after="services">expertise</a></li>
-              <li><a href="#projects" data-after="projects">projects</a></li>
-              <li><a href="#about" data-after="about">about</a></li>
-              <li><a href="#contact" data-after="contact">contact</a></li>
-            </ul>
-          </div>
+    <nav class="nav">
+      <div class="container nav-inner">
+        <a href="#top" class="brand"
+          ><span class="accent">~/</span>shishir<span class="muted">_</span></a
+        >
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span>
+        </button>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#projects"><span class="muted">01.</span> projects</a>
+          <a href="#skills"><span class="muted">02.</span> skills</a>
+          <a href="#about"><span class="muted">03.</span> about</a>
+          <a href="#contact"><span class="muted">04.</span> contact</a>
+          <a
+            class="nav-resume"
+            target="_blank"
+            rel="noopener"
+            href="https://drive.google.com/file/d/1nSEE3sZf1G4KRdovZGJHwTYUe-eN-wLe/view?usp=sharing"
+            >resume.pdf</a
+          >
         </div>
       </div>
     </nav>
-    <!-- Navbar End -->
-    <!-- Navbar End -->
-    <!-- Navbar End -->
 
-    <!-- Hero Section -->
-    <!-- Hero Section -->
-    <!-- Hero Section -->
-    <section id="hero">
-      <div id="myparticles"></div>
-      <div class="container">
-        <div>
-          <h1>Hello<span>,</span></h1>
-          <h1>My name is <span>Shishir</span></h1>
-          <h1>I am <span class="typed"></span></h1>
-          <!-- <a class="btn-type2" href="#"><span>portfolio</span></a> -->
-          <!-- <a class="btn-type2" href="#projects">portfolio</a> <br /> -->
+    <!-- Hero -->
+    <header id="top" class="container hero">
+      <div class="hero-text">
+        <div class="prompt">
+          <span class="prompt-user">shishir@portfolio</span>:<span
+            class="accent"
+            >~</span
+          >$ whoami
+        </div>
+        <h1>Mohaiminul Islam Shishir<span class="accent">.</span></h1>
+        <p class="lead">
+          Software engineer. I build web apps with React and Next.js, mobile
+          apps with React Native, and the APIs behind them with Node.js.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">./view-projects</a>
+          <a href="#contact" class="btn btn-outline">./say-hello</a>
+        </div>
+      </div>
+
+      <div class="window hero-window">
+        <div class="window-bar">
+          <span class="dot"></span><span class="dot"></span
+          ><span class="dot"></span>
+          <span class="window-title">shishir.ts</span>
+        </div>
+        <pre class="code"><span class="kw">const</span> shishir = {
+  role: <span class="str">"Software Engineer"</span>,
+  frontend: [<span class="str">"React"</span>, <span class="str">"Next.js"</span>, <span class="str">"TypeScript"</span>],
+  mobile: [<span class="str">"React Native"</span>, <span class="str">"Expo"</span>],
+  backend: [<span class="str">"Node.js"</span>, <span class="str">"Express"</span>, <span class="str">"MongoDB"</span>],
+  design: [<span class="str">"Figma"</span>, <span class="str">"Photoshop"</span>, <span class="str">"Illustrator"</span>],
+  traits: [<span class="str">"passionate"</span>, <span class="str">"diligent"</span>, <span class="str">"punctual"</span>],
+  awesome: <span class="kw">"kinda"</span>,
+};
+
+<span class="comment">// when sad: stop being sad, build a project</span>
+<span class="kw">export default</span> shishir;</pre>
+      </div>
+    </header>
+
+    <!-- Selected work -->
+    <section id="projects" class="container section">
+      <div class="prompt"><span class="accent">$</span> ls ./projects --featured</div>
+      <h2 class="section-title">Selected work</h2>
+
+      <div class="bento work-grid">
+        <a href="project1.html" class="card work-card linked-img work-feature">
+          <img src="img/frage.jpg" alt="Frage perfume shop homepage" width="1343" height="659" loading="lazy" decoding="async" />
+          <div class="work-info">
+            <div>
+              <div class="work-name">frage/</div>
+              <div class="muted">Perfume e-commerce · React</div>
+            </div>
+            <span class="work-arrow" aria-hidden="true">↗</span>
+          </div>
+        </a>
+
+        <a href="project2.html" class="card work-card linked-img work-tall">
+          <img src="img/tuzy.jpg" alt="Tuzy tour management website" width="1349" height="663" loading="lazy" decoding="async" />
+          <div class="work-info">
+            <div>
+              <div class="work-name">tuzy/</div>
+              <div class="muted">Tour management · React</div>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="https://mohaiminul69.github.io/2v2-fighting-game/"
+          target="_blank"
+          rel="noopener"
+          class="card work-card linked-img work-tall"
+        >
+          <img src="img/2v2-fighting-game.png" alt="2v2 fighting game: Sanji versus Zoro in a pixel-art forest" width="1135" height="569" loading="lazy" decoding="async" />
+          <div class="work-info">
+            <div>
+              <div class="work-name">2v2-fighting-game/</div>
+              <div class="muted">Fighting game · JavaScript</div>
+            </div>
+          </div>
+        </a>
+
+        <a href="next-projects.html" class="work-card linked-img work-half work-accent">
+          <img src="img/nft-marketplace.png" alt="NFT Drop Dapp" width="1346" height="655" loading="lazy" decoding="async" />
+          <div class="work-info">
+            <div>
+              <div class="work-name">nft-drop/</div>
+              <div>Web3 dapp · Next.js</div>
+            </div>
+          </div>
+        </a>
+
+        <a href="react-native.html" class="card work-card linked-img work-half work-mobile">
+          <div class="work-mobile-imgs">
+            <img src="img/planet-app.jpeg" alt="Planet App" width="594" height="589" loading="lazy" decoding="async" />
+            <img src="img/audio-app.jpeg" alt="Audio Store App" width="1000" height="1280" loading="lazy" decoding="async" />
+          </div>
+          <div class="work-info">
+            <div>
+              <div class="work-name">mobile-apps/</div>
+              <div class="muted">Planet App, Audio Store · React Native</div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Browse everything -->
+      <div class="browse">
+        <div class="eyebrow">Browse everything</div>
+        <div class="browse-list">
+          <a href="next-projects.html" class="browse-row">
+            <span class="browse-name">Next.js</span>
+            <span class="muted">NFT Drop Dapp and more <span class="accent">→</span></span>
+          </a>
+          <a href="reactprojects.html" class="browse-row">
+            <span class="browse-name">React</span>
+            <span class="muted">8 projects <span class="accent">→</span></span>
+          </a>
+          <a href="react-native.html" class="browse-row">
+            <span class="browse-name">React Native</span>
+            <span class="muted">Audio Store, Planet App <span class="accent">→</span></span>
+          </a>
+          <a href="ts-projects.html" class="browse-row">
+            <span class="browse-name">TypeScript</span>
+            <span class="muted">View projects <span class="accent">→</span></span>
+          </a>
+          <a href="jsprojects.html" class="browse-row">
+            <span class="browse-name">JavaScript</span>
+            <span class="muted">View projects <span class="accent">→</span></span>
+          </a>
+          <a href="frontend.html" class="browse-row">
+            <span class="browse-name">Front-end</span>
+            <span class="muted">View projects <span class="accent">→</span></span>
+          </a>
           <a
-            class="btn-type2"
+            href="https://www.behance.net/mohaiminul"
             target="_blank"
-            href="https://drive.google.com/file/d/1nSEE3sZf1G4KRdovZGJHwTYUe-eN-wLe/view?usp=sharing"
-            >View Resume</a
+            rel="noopener"
+            class="browse-row"
           >
+            <span class="browse-name">Graphic design</span>
+            <span class="muted">On Behance <span class="accent">↗</span></span>
+          </a>
         </div>
       </div>
     </section>
-    <!-- Hero Section End -->
-    <!-- Hero Section End -->
-    <!-- Hero Section End -->
 
-    <!-- Services -->
-    <!-- Services -->
-    <!-- Services -->
-    <section id="services">
-      <div class="container">
-        <h1 class="section-title">e<span>x</span>pertise</h1>
-        <div class="services">
-          <div class="service">
-            <i class="fab fa-css3"></i>
-            <h2>front-end</h2>
+    <!-- What I do -->
+    <section id="skills" class="band">
+      <div class="container section">
+        <div class="prompt"><span class="accent">$</span> cat services.md</div>
+        <h2 class="section-title">What I do</h2>
+        <div class="bento skills-grid">
+          <div class="card skill">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3>front-end</h3>
+            <p>React and Next.js SPAs, responsive layouts, Figma/PSD to code.</p>
+          </div>
+          <div class="card skill">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+            </div>
+            <h3>mobile</h3>
+            <p>Cross-platform apps with React Native and Expo.</p>
+          </div>
+          <div class="card skill">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+            </div>
+            <h3>back-end</h3>
+            <p>Node.js and Express APIs with MongoDB.</p>
+          </div>
+          <div class="card skill">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="13.5" cy="6.5" r="1.5"></circle><circle cx="17.5" cy="10.5" r="1.5"></circle><circle cx="8.5" cy="7.5" r="1.5"></circle><circle cx="6.5" cy="12.5" r="1.5"></circle><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.93 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c3.31 0 6-2.69 6-6 0-4.96-4.5-9-10-9z"></path></svg>
+            </div>
+            <h3>ui/ux &amp; graphics</h3>
+            <p>Figma, Photoshop and Illustrator.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container section about">
+      <div class="about-photo">
+        <img
+          src="img/11182121_1118642228146719_4071945820414559676_n.jpg"
+          alt="Portrait of Mohaiminul Islam Shishir" width="750" height="749" loading="lazy" decoding="async" />
+      </div>
+      <div class="about-text">
+        <div class="prompt"><span class="accent">$</span> cat about.md</div>
+        <h2 class="section-title">About me</h2>
+        <blockquote class="about-quote">
+          When I am sad, I stop being sad and build a project instead.
+        </blockquote>
+        <p>
+          I am a software engineer who started out in graphic design, so I care
+          about how things look as much as how they work. I am comfortable
+          across the stack, from Figma mock-ups to React front-ends to Node
+          APIs.
+        </p>
+        <a
+          class="text-link"
+          target="_blank"
+          rel="noopener"
+          href="https://drive.google.com/file/d/1nSEE3sZf1G4KRdovZGJHwTYUe-eN-wLe/view?usp=sharing"
+          >→ download resume.pdf</a
+        >
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container section contact">
+      <div class="bento contact-grid">
+        <div class="window quote-card">
+          <div class="window-bar">
+            <span class="dot"></span><span class="dot"></span
+            ><span class="dot"></span>
+            <span class="window-title">about.md</span>
+          </div>
+          <div class="quote-body">
+            <div class="eyebrow">About me</div>
+            <blockquote>
+              “When I am sad, I stop being sad and build a
+              <span class="accent">project</span> instead.”
+            </blockquote>
             <p>
-              I am quite good at HTML, CSS, SCSS, Bootstrap, JavaScript, and
-              React. I am quite capable in PSD to HTML conversion. know my way
-              around react library, and how to make a SPA website with react.
-              The links to my projects are given below.
+              Software engineer with a graphic-design background. I like clean
+              code, careful layouts and shipping things that work.
             </p>
-            <a class="btn-type1" href="#projects">view projects</a>
-          </div>
-          <div class="service">
-            <i class="fab fa-figma"></i>
-            <h2>ui/ux design</h2>
-            <p>
-              I think I have what it takes to be creative. I use Figma for UI/UX
-              design. I am also quite familiar with graphics designing,
-              Photoshop, and Illustrator. You can see a gist of my Graphics
-              designing work in my portfolio given below.
-            </p>
-            <a class="btn-type1" href="#ui">view projects</a>
-          </div>
-          <div class="service">
-            <i class="fab fa-node"></i>
-            <h2>Back-end</h2>
-            <p>
-              I also have Backend skills, I have worked with node.js for server
-              side implementation along with express, also know how the CRUD
-              operation works. I have worked with MongoDB for database.
-            </p>
-            <a class="btn-type1" href="#projects">view projects</a>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Services End -->
-    <!-- Services End -->
-    <!-- Services End -->
 
-    <!-- Projects Section -->
-    <!-- Projects Section -->
-    <!-- Projects Section -->
-    <section id="projects">
-      <div class="container">
-        <h1 class="section-title"><span>Pro</span>jects</h1>
-        <div class="projects">
-          <div class="project">
-            <div class="project-info">
-              <h1>Next.js Projects</h1>
-              <p>
-                It is a link to my Next JS Projects. You can check my best works
-                from here.
-              </p>
-              <a target="_blank" class="gradient-btn" href="next-projects.html"
-                >view projects</a
-              >
-            </div>
-            <a target="_blank" class="linked-img" href="next-projects.html">
-              <img src="img/next-js-logo.png" alt="" />
-            </a>
+        <div class="window contact-card">
+          <div class="window-bar">
+            <span class="dot"></span><span class="dot"></span
+            ><span class="dot"></span>
+            <span class="window-title">contact — zsh</span>
           </div>
-          <div class="project">
-            <div class="project-info">
-              <h1>React Projects</h1>
-              <h2>React Project Portfolio</h2>
-              <p>
-                It is a link to my React JS Projects. You can check my best
-                works from here.
-              </p>
-              <a target="_blank" class="gradient-btn" href="reactprojects.html"
-                >view projects</a
-              >
-            </div>
-            <a target="_blank" class="linked-img" href="reactprojects.html">
-              <img src="img/React Cover.jpeg" alt="" />
-            </a>
-          </div>
-          <div class="project">
-            <div class="project-info">
-              <h1>React Native Projects</h1>
-              <p>
-                It is a link to my React Native Projects. You can check my best
-                works from here.
-              </p>
-              <a target="_blank" class="gradient-btn" href="react-native.html"
-                >view projects</a
-              >
-            </div>
-            <a target="_blank" class="linked-img" href="react-native.html">
-              <img src="img/react-native.png" alt="" />
-            </a>
-          </div>
-          <div class="project">
-            <div class="project-info">
-              <h1>TypeScript Projects</h1>
-              <p>
-                It is a link to my TypeScript Projects. You can check my best
-                works from here.
-              </p>
-              <a target="_blank" class="gradient-btn" href="ts-projects.html"
-                >view projects</a
-              >
-            </div>
-            <a target="_blank" class="linked-img" href="ts-projects.html">
-              <img src="img/typescript.webp" alt="" />
-            </a>
-          </div>
-          <div class="project">
-            <div class="project-info">
-              <h1>JavaScript Projects</h1>
-              <h2>JavaScript Project Portfolio</h2>
-              <p>
-                It is a link to my JavaScript Projects. You can check my best
-                works from here.
-              </p>
-              <a target="_blank" class="gradient-btn" href="jsprojects.html"
-                >view projects</a
-              >
-            </div>
-            <a target="_blank" class="linked-img" href="jsprojects.html">
-              <img src="img/js.jpg" alt="" />
-            </a>
-          </div>
-          <div class="project">
-            <div class="project-info">
-              <h1>Front-End Projects</h1>
-              <h2>Front-End Project Portfolio</h2>
-              <p>
-                It is a link to my Front-End Projects. You can check my best
-                works from here.
-              </p>
-              <a target="_blank" class="gradient-btn" href="frontend.html"
-                >view projects</a
-              >
-            </div>
-            <a target="_blank" class="linked-img" href="frontend.html">
-              <img src="img/uiux.png" alt="" />
-            </a>
-          </div>
-          <div id="ui" class="project">
-            <div class="project-info">
-              <h1>Graphics Design</h1>
-              <h2>Graphics Designing Portfolio</h2>
-              <p>
-                It is a link to my Graphics Designing portfolio. You can check
-                my best works from here.
-              </p>
-              <a
-                target="_blank"
-                class="gradient-btn"
-                href="https://www.behance.net/mohaiminul"
-                >view projects</a
-              >
-            </div>
-            <a
-              target="_blank"
-              class="linked-img"
-              href="https://www.behance.net/mohaiminul"
-            >
-              <img src="img/Graphics.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Projects Section End -->
-    <!-- Projects Section End -->
-    <!-- Projects Section End -->
-
-    <!-- About Section -->
-    <!-- About Section -->
-    <!-- About Section -->
-    <section id="about">
-      <div class="container">
-        <div class="col-left">
-          <i class="fas fa-chevron-up"></i>
-          <div class="about-img">
-            <img
-              src="img/11182121_1118642228146719_4071945820414559676_n.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="col-right">
-          <h1 class="section-title">About <span>me</span></h1>
-          <h2>software engineer</h2>
-          <p class="qoute-pera">
-            <span class="qoutation">
-              <i class="fas fa-quote-left"></i>
-            </span>
-            <span class="qoute">
-              When I am sad,<br />
-              I stop being sad,<br />
-              And make a <span>Website</span> Instead -
-            </span>
-            <span class="qoutation">
-              <i class="fas fa-quote-right"></i>
-            </span>
-          </p>
-          <p class="skill-set-details">
-            <span>While doing that I use...</span><br />
-            HTML, CSS, SCSS, Bootstrap, JavaScript, and also learning React. I
-            can build Attractive Webpages, and quite capable in PSD to HTML
-            conversion. I know how to handle API. Also, have a good UI/UX sense.
-            I have done a UI/UX course from Coursera.
-          </p>
-          <a
-            class="btn-type1"
-            href="https://drive.google.com/file/d/1nSEE3sZf1G4KRdovZGJHwTYUe-eN-wLe/view?usp=sharing"
-            target="_blank"
-            class="cta"
-            >View Resume</a
-          >
-        </div>
-      </div>
-    </section>
-    <!-- About Section End -->
-    <!-- About Section End -->
-    <!-- About Section End -->
-
-    <!-- Contact Section -->
-    <!-- Contact Section -->
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <h1 class="section-title">contact <span>Info</span></h1>
-        <div class="contact-divs">
-          <div class="left-divs">
-            <div class="phone-div">
-              <i class="fas fa-mobile-alt"></i>
-              <h1>contact number</h1>
-              <p>+88 017 8650 3069</p>
-            </div>
-            <div class="social-div">
-              <i class="fas fa-link"></i>
-              <h1>social links</h1>
-              <ul class="social-links">
-                <li>
-                  <a target="_blank" href="https://www.facebook.com/dew.haven"
-                    ><i class="fab fa-facebook-f" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://www.instagram.com/dew_haven69/"
-                    ><i class="fab fa-instagram" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://www.linkedin.com/in/mohaiminul-islam-shishir-9a645821b/"
-                    ><i class="fab fa-linkedin-in" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://www.behance.net/mohaiminul"
-                    ><i class="fab fa-behance" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://github.com/Mohaiminul69"
-                    ><i class="fab fa-github" aria-hidden="true"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <div class="email-div">
-              <i class="fas fa-at"></i>
-              <h1>email address</h1>
-              <p
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-                data-bs-toggle="tooltip"
-                data-bs-placement="top"
-                title="Click to Copy Email"
-                id="email"
-              >
-                mohaiminul.islam.shishir@gmail.com<i
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  title="Click to Copy Email"
-                  class="far fa-clipboard email"
-                ></i>
-              </p>
-            </div>
-          </div>
-          <div class="right-div">
-            <i class="far fa-envelope"></i>
-            <h1>Contact Form</h1>
+          <div class="contact-body">
+            <h2>Let’s talk<span class="accent">_</span></h2>
             <form
-              class="row g-3"
+              class="contact-form"
               action="https://formspree.io/f/mwkyeqnk"
               method="POST"
             >
-              <div class="col-md-5">
-                <label class="form-label">Name</label>
-                <input
-                  name="name"
-                  placeholder="Your Name"
-                  type="text"
-                  class="form-control"
-                />
-              </div>
-              <div class="col-md-7">
-                <label for="inputEmail4" class="form-label">Email</label>
+              <label
+                >Name
+                <input name="name" type="text" placeholder="Your name"
+              /></label>
+              <label
+                >Email
                 <input
                   name="email"
-                  placeholder="Your Email"
                   type="email"
-                  class="form-control"
-                  id="inputEmail4"
+                  placeholder="you@example.com"
                   required
-                />
-              </div>
-              <div class="col-12">
-                <label class="form-label">Subject</label>
-                <input
-                  name="subject"
-                  type="text"
-                  class="form-control"
-                  placeholder="Subject"
-                />
-              </div>
-              <div class="col-12">
-                <label class="form-label">Message</label>
+              /></label>
+              <label class="full"
+                >Message
                 <textarea
                   name="message"
-                  placeholder="Leave a Message"
-                  class="form-control"
+                  rows="4"
+                  placeholder="Tell me about your project"
                   required
                 ></textarea>
-              </div>
-              <div class="col-12">
-                <button type="submit" class="btn btn-type1">Submit</button>
-              </div>
+              </label>
+              <button type="submit" class="btn btn-primary full">
+                Send message
+              </button>
             </form>
+            <div class="email-row">
+              <a class="muted email-link" href="mailto:mohaiminul.islam.shishir@gmail.com"
+                >or email mohaiminul.islam.shishir@gmail.com</a
+              >
+              <button
+                class="copy-btn"
+                type="button"
+                data-copy="mohaiminul.islam.shishir@gmail.com"
+                aria-label="Copy email address"
+              >
+                <svg class="icon-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <svg class="icon-check" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span class="copy-label" aria-live="polite">copy</span>
+              </button>
+            </div>
+            <div class="email-row">
+              <a class="muted email-link" href="tel:+8801786503069"
+                >or call +88 017 8650 3069</a
+              >
+              <button
+                class="copy-btn"
+                type="button"
+                data-copy="+8801786503069"
+                aria-label="Copy phone number"
+              >
+                <svg class="icon-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <svg class="icon-check" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span class="copy-label" aria-live="polite">copy</span>
+              </button>
+            </div>
+            <div class="socials">
+              <a target="_blank" rel="noopener" href="https://github.com/Mohaiminul69">github</a>
+              <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/mohaiminul-islam-shishir-9a645821b/">linkedin</a>
+              <a target="_blank" rel="noopener" href="https://www.behance.net/mohaiminul">behance</a>
+              <a target="_blank" rel="noopener" href="https://www.instagram.com/dew_haven69/">instagram</a>
+            </div>
           </div>
         </div>
-        <div class="footer">
-          <p>
-            Site managed by <span>mohaiminul islam shishir</span>. Copyright ©
-            <span>shishir</span> 2021. All rights reserved.
-          </p>
-        </div>
       </div>
+      <footer class="footer">
+        built &amp; designed by shishir · © <span id="year">2026</span>
+      </footer>
     </section>
-    <!-- Contact Section End -->
-    <!-- Contact Section End -->
-    <!-- Contact Section End -->
 
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Email Copied !</h5>
-            <i
-              type="button"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-              class="fas fa-times"
-            ></i>
-          </div>
-          <div class="modal-body">
-            Email "mohaiminul.islam.shishir@gmail.com" copied to clipboard.
-          </div>
-          <div class="modal-footer">
-            <button class="gradient-btn" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal -->
-
-    <script src="js/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="js/particles.js"></script>
-    <script src="js/myparticles.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
     <script src="js/mouse.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

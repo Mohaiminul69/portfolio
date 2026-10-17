@@ -23,11 +23,32 @@ function turnOnCursor() {
 
 function cursor(e) {
   turnOnCursor();
-  mouseCursor.style.top = `${e.pageY}px`;
-  mouseCursor.style.left = `${e.pageX}px`;
-  mouseFollower.style.top = `${e.pageY}px`;
-  mouseFollower.style.left = `${e.pageX}px`;
+  lastClientX = e.clientX;
+  lastClientY = e.clientY;
+  placeCursor();
 }
+
+// Remember where the mouse is on screen so the cursor can follow
+// the page when scrolling without moving the mouse.
+let lastClientX = null;
+let lastClientY = null;
+
+function placeCursor() {
+  const x = `${lastClientX + window.scrollX}px`;
+  const y = `${lastClientY + window.scrollY}px`;
+  mouseCursor.style.top = y;
+  mouseCursor.style.left = x;
+  mouseFollower.style.top = y;
+  mouseFollower.style.left = x;
+}
+
+window.addEventListener(
+  "scroll",
+  () => {
+    if (lastClientX !== null) placeCursor();
+  },
+  { passive: true }
+);
 
 body.addEventListener("mousedown", (e) => {
   if (e) {

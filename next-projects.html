@@ -2,49 +2,119 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Next.js projects by Mohaiminul Islam Shishir. Server-rendered React apps built with Next.js." />
+    <!-- Link previews -->
+    <link rel="canonical" href="https://mohaiminul69.github.io/portfolio/next-projects.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mohaiminul Islam Shishir" />
+    <meta property="og:title" content="Next.js projects — Mohaiminul Islam Shishir" />
+    <meta property="og:description" content="Next.js projects by Mohaiminul Islam Shishir. Server-rendered React apps built with Next.js." />
+    <meta property="og:url" content="https://mohaiminul69.github.io/portfolio/next-projects.html" />
+    <meta property="og:image" content="https://mohaiminul69.github.io/portfolio/img/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Mohaiminul Islam Shishir — software engineer building web and mobile apps" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Next.js projects — Mohaiminul Islam Shishir" />
+    <meta name="twitter:description" content="Next.js projects by Mohaiminul Islam Shishir. Server-rendered React apps built with Next.js." />
+    <meta name="twitter:image" content="https://mohaiminul69.github.io/portfolio/img/og-image.png" />
+    <meta name="theme-color" content="#0e0e10" />
+    <!-- /Link previews -->
     <link rel="shortcut icon" href="img/man-of-steal.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Next.js Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+    />
+    <link rel="stylesheet" href="css/home.css" />
+    <title>Next.js projects — Mohaiminul Islam Shishir</title>
   </head>
   <body>
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
-    <section id="projects">
-      <div class="container">
-        <h1 class="section-title">
-          Next<span>.</span>js <span>Pro</span>jects
-        </h1>
-        <div class="projects" style="overflow: hidden">
-          <div class="project">
-            <div class="project-info">
-              <h1>NFT Drop Dapp</h1>
-              <h2>Next.js Project</h2>
-              <p>
-                It is a website for online perfume shop. Their main objective is
-                to sell perfumes online.
-              </p>
-              <a
-                target="_blank"
-                class="gradient-btn"
-                href="https://nft-drop-dapp-one.vercel.app/"
-                >view project</a
-              >
-            </div>
-            <a
-              target="_blank"
-              class="linked-img"
-              href="https://nft-drop-dapp-one.vercel.app/"
-            >
-              <img src="img/nft-marketplace.png" alt="" />
-            </a>
-          </div>
+    <!-- Navbar -->
+    <nav class="nav">
+      <div class="container nav-inner">
+        <a href="index.html" class="brand"
+          ><span class="accent">~/</span>shishir<span class="muted">_</span></a
+        >
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span>
+        </button>
+        <div class="nav-menu" id="nav-menu">
+          <a href="index.html#projects"><span class="muted">01.</span> projects</a>
+          <a href="index.html#skills"><span class="muted">02.</span> skills</a>
+          <a href="index.html#about"><span class="muted">03.</span> about</a>
+          <a href="index.html#contact"><span class="muted">04.</span> contact</a>
+          <a class="nav-resume" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1nSEE3sZf1G4KRdovZGJHwTYUe-eN-wLe/view?usp=sharing">resume.pdf</a>
         </div>
       </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="container list-header">
+      <a class="back-link" href="index.html#projects">← cd ~</a>
+      <div class="prompt"><span class="accent">$</span> ls ./projects/next</div>
+      <h1 class="list-title">Next.js projects<span class="accent">.</span></h1>
+      <p class="list-intro">Server-rendered React apps built with Next.js. <span class="muted">· 1 project</span></p>
+      <nav class="tabs" aria-label="Project categories">
+        <a class="tab" href="next-projects.html" aria-current="page">Next.js</a>
+        <a class="tab" href="reactprojects.html">React</a>
+        <a class="tab" href="react-native.html">React Native</a>
+        <a class="tab" href="ts-projects.html">TypeScript</a>
+        <a class="tab" href="jsprojects.html">JavaScript</a>
+        <a class="tab" href="frontend.html">Front-end</a>
+        <a class="tab" target="_blank" rel="noopener" href="https://www.behance.net/mohaiminul">Graphic design ↗</a>
+      </nav>
+    </header>
+
+    <!-- Projects -->
+    <main class="container list-main">
+      <div class="project-grid">
+        <article class="card project-card">
+          <a class="project-media linked-img" target="_blank" rel="noopener" href="https://nft-drop-dapp-one.vercel.app/">
+            <img src="img/nft-marketplace.png" alt="Screenshot of nft drop dapp" width="1346" height="655" loading="lazy" decoding="async" />
+          </a>
+          <div class="project-body">
+            <h2 class="project-name">nft-drop-dapp/</h2>
+            <p class="project-desc">An NFT drop page built as a decentralised app with Next.js.</p>
+            <ul class="tags"><li>#nextjs</li><li>#web3</li></ul>
+            <div class="project-actions">
+              <a class="btn btn-primary btn-sm" target="_blank" rel="noopener" href="https://nft-drop-dapp-one.vercel.app/">live ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <!-- CTA -->
+    <section class="container list-cta">
+      <div class="window">
+        <div class="window-bar">
+          <span class="dot"></span><span class="dot"></span
+          ><span class="dot"></span>
+          <span class="window-title">contact — zsh</span>
+        </div>
+        <div class="list-cta-body">
+          <p>Like what you see? Let’s build something together<span class="accent">_</span></p>
+          <a class="btn btn-primary" href="index.html#contact">./say-hello</a>
+        </div>
+      </div>
+      <footer class="footer">
+        built &amp; designed by shishir · © <span id="year">2026</span>
+      </footer>
     </section>
 
+    <script src="js/home.js"></script>
     <script src="js/mouse.js"></script>
   </body>
 </html>

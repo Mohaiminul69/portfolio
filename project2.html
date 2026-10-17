@@ -2,87 +2,199 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tuzy — A tour booking platform where travellers book trips and admins approve bookings and create new tours." />
+    <!-- Link previews -->
+    <link rel="canonical" href="https://mohaiminul69.github.io/portfolio/project2.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mohaiminul Islam Shishir" />
+    <meta property="og:title" content="Tuzy — Case study · Mohaiminul Islam Shishir" />
+    <meta property="og:description" content="Tuzy — A tour booking platform where travellers book trips and admins approve bookings and create new tours." />
+    <meta property="og:url" content="https://mohaiminul69.github.io/portfolio/project2.html" />
+    <meta property="og:image" content="https://mohaiminul69.github.io/portfolio/img/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Mohaiminul Islam Shishir — software engineer building web and mobile apps" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tuzy — Case study · Mohaiminul Islam Shishir" />
+    <meta name="twitter:description" content="Tuzy — A tour booking platform where travellers book trips and admins approve bookings and create new tours." />
+    <meta name="twitter:image" content="https://mohaiminul69.github.io/portfolio/img/og-image.png" />
+    <meta name="theme-color" content="#0e0e10" />
+    <!-- /Link previews -->
     <link rel="shortcut icon" href="img/man-of-steal.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/details.css" />
-    <title>Projects Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+    />
+    <link rel="stylesheet" href="css/home.css" />
+    <title>Tuzy — Case study · Mohaiminul Islam Shishir</title>
   </head>
   <body>
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
-    <section id="projects">
-      <div class="container">
-        <h1 class="section-title">Tuzy <span>Pro</span>jects</h1>
-        <div class="project-details">
-          <h1 class="display-5 text-white mb-4">Screenshots</h1>
-          <div class="row">
-            <div class="col-md-4 mb-3">
-              <img src="https://i.ibb.co/cTZkyWP/tuzy.jpg" alt="" />
-            </div>
-            <div class="col-md-4 mb-3">
-              <img src="https://i.ibb.co/8KZ7LMb/tuzy-screenshot1.jpg" alt="" />
-            </div>
-            <div class="col-md-4 mb-3">
-              <img src="https://i.ibb.co/F4M9gYf/tuzy-screenshot2.jpg" alt="" />
-            </div>
-          </div>
-          <a
-            class="btn-type1"
-            href="https://tourism-website-dd73a.web.app/"
-            target="_blank"
-            class="cta"
-            >Live Site</a
-          >
-          <a
-            class="btn-type1"
-            href="https://github.com/Mohaiminul69/tuzy-client-side"
-            target="_blank"
-            class="cta"
-            >Client-Side Code</a
-          >
-          <a
-            class="btn-type1"
-            href="https://github.com/Mohaiminul69/tuzy-server-side"
-            target="_blank"
-            class="cta"
-            >server-Side Code</a
-          >
-          <h1 class="display-5 text-white text-left my-3">Details</h1>
-          <p class="text-white fs-4">
-            It is a website for online Tour management company. Their main
-            objective is to arrange tours and invite people all over the world,
-            They also have good offers for tours that are less expansive. They
-            provide visa assistance and also arranges hotels for the travellers.
-            They also have a varity of packages that lets the travellers go on
-            fun trips such as hicking, camping and sorts.
-          </p>
-          <ul class="text-white fs-5">
-            <li>
-              It lets you Login to the App and lets you browse through the
-              tours.
-            </li>
-            <li>
-              Lets you Book a tour online and keeps your booking data saved in
-              database.
-            </li>
-            <li>
-              And shows you all of your booked tours once you login to the
-              website, you can also cancel them.
-            </li>
-            <li>
-              It lets you manage the tours that the users book, such as
-              approving the booking or canceling them.
-            </li>
-            <li>And it also lets you create a new tour.</li>
-          </ul>
+    <!-- Navbar -->
+    <nav class="nav">
+      <div class="container nav-inner">
+        <a href="index.html" class="brand"
+          ><span class="accent">~/</span>shishir<span class="muted">_</span></a
+        >
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span>
+        </button>
+        <div class="nav-menu" id="nav-menu">
+          <a href="index.html#projects"><span class="muted">01.</span> projects</a>
+          <a href="index.html#skills"><span class="muted">02.</span> skills</a>
+          <a href="index.html#about"><span class="muted">03.</span> about</a>
+          <a href="index.html#contact"><span class="muted">04.</span> contact</a>
+          <a class="nav-resume" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1nSEE3sZf1G4KRdovZGJHwTYUe-eN-wLe/view?usp=sharing">resume.pdf</a>
         </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="container case-header">
+      <a class="back-link" href="reactprojects.html">← cd ../react</a>
+      <div class="prompt"><span class="accent">$</span> cat ./projects/react/tuzy/README.md</div>
+      <h1 class="list-title">Tuzy<span class="accent">.</span></h1>
+      <p class="list-intro">A tour booking platform where travellers book trips and admins approve bookings and create new tours.</p>
+      <ul class="tags case-tags"><li>#react</li><li>#booking</li><li>#full-stack</li></ul>
+      <div class="case-actions">
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://tourism-website-dd73a.web.app/">live site ↗</a>
+        <a class="btn btn-outline" target="_blank" rel="noopener" href="https://github.com/Mohaiminul69/tuzy-client-side">client code ↗</a>
+        <a class="btn btn-outline" target="_blank" rel="noopener" href="https://github.com/Mohaiminul69/tuzy-server-side">server code ↗</a>
+      </div>
+    </header>
+
+    <!-- Hero screenshot -->
+    <section class="container case-hero">
+      <figure class="window browser browser-hero">
+          <div class="window-bar">
+            <span class="dot"></span><span class="dot"></span
+            ><span class="dot"></span>
+            <span class="browser-url">tourism-website-dd73a.web.app</span>
+          </div>
+          <img src="img/tuzy.jpg" alt="Tuzy homepage" width="1349" height="663" fetchpriority="high" decoding="async" />
+        </figure>
+    </section>
+
+    <!-- Overview -->
+    <section class="container case-section case-overview">
+      <div>
+        <div class="prompt"><span class="accent">$</span> cat overview.md</div>
+        <h2 class="section-title">Overview</h2>
+        <div class="case-text">
+          <p>Tuzy is the website of a tour management company that arranges tours and invites travellers from all over the world. It offers budget-friendly tour deals, visa assistance and hotel bookings.</p>
+          <p>There are also packages for adventure trips such as hiking and camping.</p>
+        </div>
+      </div>
+      <aside class="card case-facts" aria-label="Project facts">
+        <dl>
+            <div><dt>Type</dt><dd>Full-stack web app</dd></div>
+            <div><dt>Front-end</dt><dd>React</dd></div>
+            <div><dt>Users</dt><dd>Travellers and admins</dd></div>
+            <div><dt>Live</dt><dd><a target="_blank" rel="noopener" href="https://tourism-website-dd73a.web.app/">tourism-website-dd73a.web.app ↗</a></dd></div>
+            <div><dt>Code</dt><dd class="fact-links"><a target="_blank" rel="noopener" href="https://github.com/Mohaiminul69/tuzy-client-side">client code</a><a target="_blank" rel="noopener" href="https://github.com/Mohaiminul69/tuzy-server-side">server code</a></dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <!-- Features -->
+    <section class="container case-section">
+      <div class="prompt"><span class="accent">$</span> ls ./features</div>
+      <h2 class="section-title">What it does</h2>
+      <div class="features">
+          <div class="card feature">
+            <span class="feature-num">01</span>
+            <h3>Accounts</h3>
+            <p>Log in to the app and browse through the available tours.</p>
+          </div>
+          <div class="card feature">
+            <span class="feature-num">02</span>
+            <h3>Online booking</h3>
+            <p>Book a tour online. Your booking is saved to the database.</p>
+          </div>
+          <div class="card feature">
+            <span class="feature-num">03</span>
+            <h3>My bookings</h3>
+            <p>See all the tours you’ve booked once you log in, and cancel any of them.</p>
+          </div>
+          <div class="card feature">
+            <span class="feature-num">04</span>
+            <h3>Booking management</h3>
+            <p>Admins manage every booking, approving or cancelling them.</p>
+          </div>
+          <div class="card feature">
+            <span class="feature-num">05</span>
+            <h3>Create tours</h3>
+            <p>Admins can add brand-new tours to the site.</p>
+          </div>
       </div>
     </section>
 
+    <!-- Screenshots -->
+    <section class="container case-section">
+      <div class="prompt"><span class="accent">$</span> open ./screenshots</div>
+      <h2 class="section-title">More screens</h2>
+      <div class="gallery">
+        <figure class="window browser">
+          <div class="window-bar">
+            <span class="dot"></span><span class="dot"></span
+            ><span class="dot"></span>
+            <span class="browser-url">tourism-website-dd73a.web.app</span>
+          </div>
+          <img src="img/tuzy-screenshot1.jpg" alt="Tuzy screenshot 2" width="1343" height="661" loading="lazy" decoding="async" />
+        </figure>
+        <figure class="window browser">
+          <div class="window-bar">
+            <span class="dot"></span><span class="dot"></span
+            ><span class="dot"></span>
+            <span class="browser-url">tourism-website-dd73a.web.app</span>
+          </div>
+          <img src="img/tuzy-screenshot2.jpg" alt="Tuzy screenshot 3" width="1335" height="669" loading="lazy" decoding="async" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- Prev / next -->
+    <nav class="container pager" aria-label="Other case studies">
+      <a class="card pager-link" href="project1.html">
+        <span class="muted">← previous</span>
+        <span class="pager-name">frage/</span>
+      </a>
+      <a class="card pager-link pager-next" href="project3.html">
+        <span class="muted">next →</span>
+        <span class="pager-name">health-monitor/</span>
+      </a>
+    </nav>
+
+    <!-- CTA -->
+    <section class="container list-cta">
+      <div class="window">
+        <div class="window-bar">
+          <span class="dot"></span><span class="dot"></span
+          ><span class="dot"></span>
+          <span class="window-title">contact — zsh</span>
+        </div>
+        <div class="list-cta-body">
+          <p>Like what you see? Let’s build something together<span class="accent">_</span></p>
+          <a class="btn btn-primary" href="index.html#contact">./say-hello</a>
+        </div>
+      </div>
+      <footer class="footer">
+        built &amp; designed by shishir · © <span id="year">2026</span>
+      </footer>
+    </section>
+
+    <script src="js/home.js"></script>
     <script src="js/mouse.js"></script>
   </body>
 </html>

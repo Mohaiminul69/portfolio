@@ -2,103 +2,235 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Frage — An online perfume store with customer accounts, orders, reviews and a separate admin dashboard." />
+    <!-- Link previews -->
+    <link rel="canonical" href="https://mohaiminul69.github.io/portfolio/project1.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mohaiminul Islam Shishir" />
+    <meta property="og:title" content="Frage — Case study · Mohaiminul Islam Shishir" />
+    <meta property="og:description" content="Frage — An online perfume store with customer accounts, orders, reviews and a separate admin dashboard." />
+    <meta property="og:url" content="https://mohaiminul69.github.io/portfolio/project1.html" />
+    <meta property="og:image" content="https://mohaiminul69.github.io/portfolio/img/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Mohaiminul Islam Shishir — software engineer building web and mobile apps" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Frage — Case study · Mohaiminul Islam Shishir" />
+    <meta name="twitter:description" content="Frage — An online perfume store with customer accounts, orders, reviews and a separate admin dashboard." />
+    <meta name="twitter:image" content="https://mohaiminul69.github.io/portfolio/img/og-image.png" />
+    <meta name="theme-color" content="#0e0e10" />
+    <!-- /Link previews -->
     <link rel="shortcut icon" href="img/man-of-steal.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/details.css" />
-    <title>Projects Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+    />
+    <link rel="stylesheet" href="css/home.css" />
+    <title>Frage — Case study · Mohaiminul Islam Shishir</title>
   </head>
   <body>
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
-    <section id="projects">
-      <div class="container">
-        <h1 class="section-title">Frage <span>Pro</span>jects</h1>
-        <div class="project-details">
-          <h1 class="display-5 text-white mb-4">Screenshots</h1>
-          <div class="row">
-            <div class="col-md-4 mb-3">
-              <img src="https://i.ibb.co/stR1nxw/frage.jpg" alt="" />
-            </div>
-            <div class="col-md-4 mb-3">
-              <img
-                src="https://i.ibb.co/71z9Tt0/frage-screenshot2.jpg"
-                alt=""
-              />
-            </div>
-            <div class="col-md-4 mb-3">
-              <img
-                src="https://i.ibb.co/WKC3PHx/frage-screenshot1.jpg"
-                alt=""
-              />
-            </div>
+    <!-- Navbar -->
+    <nav class="nav">
+      <div class="container nav-inner">
+        <a href="index.html" class="brand"
+          ><span class="accent">~/</span>shishir<span class="muted">_</span></a
+        >
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span>
+        </button>
+        <div class="nav-menu" id="nav-menu">
+          <a href="index.html#projects"><span class="muted">01.</span> projects</a>
+          <a href="index.html#skills"><span class="muted">02.</span> skills</a>
+          <a href="index.html#about"><span class="muted">03.</span> about</a>
+          <a href="index.html#contact"><span class="muted">04.</span> contact</a>
+          <a class="nav-resume" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1nSEE3sZf1G4KRdovZGJHwTYUe-eN-wLe/view?usp=sharing">resume.pdf</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="container case-header">
+      <a class="back-link" href="reactprojects.html">← cd ../react</a>
+      <div class="prompt"><span class="accent">$</span> cat ./projects/react/frage/README.md</div>
+      <h1 class="list-title">Frage<span class="accent">.</span></h1>
+      <p class="list-intro">An online perfume store with customer accounts, orders, reviews and a separate admin dashboard.</p>
+      <ul class="tags case-tags"><li>#react</li><li>#e-commerce</li><li>#full-stack</li></ul>
+      <div class="case-actions">
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://frage-website.web.app/">live site ↗</a>
+        <a class="btn btn-outline" target="_blank" rel="noopener" href="https://github.com/Mohaiminul69/frage-client-side">client code ↗</a>
+        <a class="btn btn-outline" target="_blank" rel="noopener" href="https://github.com/Mohaiminul69/frage-server-side">server code ↗</a>
+      </div>
+    </header>
+
+    <!-- Hero screenshot -->
+    <section class="container case-hero">
+      <figure class="window browser browser-hero">
+          <div class="window-bar">
+            <span class="dot"></span><span class="dot"></span
+            ><span class="dot"></span>
+            <span class="browser-url">frage-website.web.app</span>
           </div>
-          <a
-            class="btn-type1"
-            href="https://frage-website.web.app/"
-            target="_blank"
-            class="cta"
-            >Live Site</a
-          >
-          <a
-            class="btn-type1"
-            href="https://github.com/Mohaiminul69/frage-client-side"
-            target="_blank"
-            class="cta"
-            >Client-Side Code</a
-          >
-          <a
-            class="btn-type1"
-            href="https://github.com/Mohaiminul69/frage-server-side"
-            target="_blank"
-            class="cta"
-            >server-Side Code</a
-          >
-          <h1 class="display-5 text-white text-left my-3">Details</h1>
-          <p class="text-white fs-4">
-            It is a website for online perfume shop. Their main objective is to
-            sell perfumes online. They have a huge varity of collection of
-            perfume. They have a seperate collection for men and women, all
-            though their price range is pretty high.
-          </p>
-          <ul class="text-white fs-5">
-            <li>
-              It lets you Login to the App and lets you explore the perfume
-              collection.
-            </li>
-            <li>
-              Lets you to order a perfume online and stores your perchase info
-              in the database.
-            </li>
-            <li>
-              And shows you all of your previous orders, once you login to the
-              website, you can also cancel them.
-            </li>
-            <li>
-              It also has a admin panel, that lets the admin manage the
-              products, add new products, and manage the orders, you cannot see
-              the admin dashboard if you are not an admin, the admin dashboard
-              is separate and password protected.
-            </li>
-            <li>
-              As a customer you can add a review to the website of others and
-              yourself to see.
-            </li>
-            <li>
-              But if you really want to peek into the admin dashboard the email
-              is admin@admin.com and password is 123456, you are welcome, but do
-              not delete any existing orders from there, please create as many
-              products as you like, and delete them as you wish, so that my
-              precious website stays as cute as i created.
-            </li>
-          </ul>
+          <img src="img/frage.jpg" alt="Frage homepage" width="1343" height="659" fetchpriority="high" decoding="async" />
+        </figure>
+    </section>
+
+    <!-- Overview -->
+    <section class="container case-section case-overview">
+      <div>
+        <div class="prompt"><span class="accent">$</span> cat overview.md</div>
+        <h2 class="section-title">Overview</h2>
+        <div class="case-text">
+          <p>Frage is an online perfume shop. Its goal is simple: sell perfumes online. The store carries a wide range of perfumes, with separate collections for men and women at the premium end of the market.</p>
+        </div>
+      </div>
+      <aside class="card case-facts" aria-label="Project facts">
+        <dl>
+            <div><dt>Type</dt><dd>Full-stack web app</dd></div>
+            <div><dt>Front-end</dt><dd>React</dd></div>
+            <div><dt>Users</dt><dd>Customers and admins</dd></div>
+            <div><dt>Live</dt><dd><a target="_blank" rel="noopener" href="https://frage-website.web.app/">frage-website.web.app ↗</a></dd></div>
+            <div><dt>Code</dt><dd class="fact-links"><a target="_blank" rel="noopener" href="https://github.com/Mohaiminul69/frage-client-side">client code</a><a target="_blank" rel="noopener" href="https://github.com/Mohaiminul69/frage-server-side">server code</a></dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <!-- Features -->
+    <section class="container case-section">
+      <div class="prompt"><span class="accent">$</span> ls ./features</div>
+      <h2 class="section-title">What it does</h2>
+      <div class="features">
+          <div class="card feature">
+            <span class="feature-num">01</span>
+            <h3>Accounts</h3>
+            <p>Log in to explore the full perfume collection.</p>
+          </div>
+          <div class="card feature">
+            <span class="feature-num">02</span>
+            <h3>Online orders</h3>
+            <p>Order a perfume online. Your purchase details are saved to the database.</p>
+          </div>
+          <div class="card feature">
+            <span class="feature-num">03</span>
+            <h3>Order history</h3>
+            <p>See all your previous orders once you log in, and cancel any of them.</p>
+          </div>
+          <div class="card feature">
+            <span class="feature-num">04</span>
+            <h3>Admin dashboard</h3>
+            <p>A separate, password-protected dashboard where admins manage products, add new ones and handle orders. Customers can&#x27;t see it.</p>
+          </div>
+          <div class="card feature">
+            <span class="feature-num">05</span>
+            <h3>Reviews</h3>
+            <p>Customers can leave reviews on the site for everyone to read.</p>
+          </div>
+      </div>
+    </section>
+
+    <!-- Demo login -->
+    <section class="container case-section">
+      <div class="window demo-box">
+        <div class="window-bar">
+          <span class="dot"></span><span class="dot"></span
+          ><span class="dot"></span>
+          <span class="window-title">admin — demo login</span>
+        </div>
+        <div class="demo-body">
+          <div>
+            <h2 class="demo-title">Want to peek at the admin dashboard?</h2>
+            <p>Log in with these details. Feel free to create and delete as many products as you like, but please don’t delete the existing orders, so the site stays as cute as I made it.</p>
+          </div>
+          <div class="creds">
+              <div class="cred">
+                <span class="cred-key">email:</span>
+                <code class="cred-value">admin@admin.com</code>
+                <button class="copy-btn" type="button" data-copy="admin@admin.com" aria-label="Copy email">
+                  <svg class="icon-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <svg class="icon-check" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span class="copy-label" aria-live="polite">copy</span>
+                </button>
+              </div>
+              <div class="cred">
+                <span class="cred-key">password:</span>
+                <code class="cred-value">123456</code>
+                <button class="copy-btn" type="button" data-copy="123456" aria-label="Copy password">
+                  <svg class="icon-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <svg class="icon-check" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span class="copy-label" aria-live="polite">copy</span>
+                </button>
+              </div>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- Screenshots -->
+    <section class="container case-section">
+      <div class="prompt"><span class="accent">$</span> open ./screenshots</div>
+      <h2 class="section-title">More screens</h2>
+      <div class="gallery">
+        <figure class="window browser">
+          <div class="window-bar">
+            <span class="dot"></span><span class="dot"></span
+            ><span class="dot"></span>
+            <span class="browser-url">frage-website.web.app</span>
+          </div>
+          <img src="img/frage-screenshot2.jpg" alt="Frage screenshot 2" width="1361" height="661" loading="lazy" decoding="async" />
+        </figure>
+        <figure class="window browser">
+          <div class="window-bar">
+            <span class="dot"></span><span class="dot"></span
+            ><span class="dot"></span>
+            <span class="browser-url">frage-website.web.app</span>
+          </div>
+          <img src="img/frage-screenshot1.jpg" alt="Frage screenshot 3" width="1343" height="661" loading="lazy" decoding="async" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- Prev / next -->
+    <nav class="container pager" aria-label="Other case studies">
+      <a class="card pager-link" href="project3.html">
+        <span class="muted">← previous</span>
+        <span class="pager-name">health-monitor/</span>
+      </a>
+      <a class="card pager-link pager-next" href="project2.html">
+        <span class="muted">next →</span>
+        <span class="pager-name">tuzy/</span>
+      </a>
+    </nav>
+
+    <!-- CTA -->
+    <section class="container list-cta">
+      <div class="window">
+        <div class="window-bar">
+          <span class="dot"></span><span class="dot"></span
+          ><span class="dot"></span>
+          <span class="window-title">contact — zsh</span>
+        </div>
+        <div class="list-cta-body">
+          <p>Like what you see? Let’s build something together<span class="accent">_</span></p>
+          <a class="btn btn-primary" href="index.html#contact">./say-hello</a>
+        </div>
+      </div>
+      <footer class="footer">
+        built &amp; designed by shishir · © <span id="year">2026</span>
+      </footer>
+    </section>
+
+    <script src="js/home.js"></script>
     <script src="js/mouse.js"></script>
   </body>
 </html>
