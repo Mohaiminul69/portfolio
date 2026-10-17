@@ -271,8 +271,12 @@ button {
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 56px;
   align-items: center;
-  padding-top: 96px;
-  padding-bottom: 96px;
+  /* Fill the first screen (minus the ~70px nav) and centre the content in it */
+  align-content: center;
+  min-height: calc(100vh - 70px);
+  min-height: calc(100svh - 70px);
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 .hero-text {
   display: flex;
